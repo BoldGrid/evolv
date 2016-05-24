@@ -58,7 +58,6 @@ body,
   	background-size: cover;
 }
 .page-bg {
-	background: rgba(0, 0, 0, .60);	
 	padding: 25px 0 60px;
 }
 .imhwpb-bg-1 {
@@ -66,7 +65,6 @@ body,
 	padding: 75px 0 60px;
 }
 .imhwpb-bg-2 {
-	background: #0a0a05;
 	padding: 75px 0 60px;
 }
 .mce-content-body .container {
@@ -80,11 +78,190 @@ body,
 	background: none;
 	padding-top: 25px;
 }
+
+/*-----------------------------------------------
+## Typography
+-----------------------------------------------*/
+h1 {
+	font-weight: 500;
+}
+h2,
+h3 {
+	font-weight: 500;
+	margin: 15px 0 20px;
+}
+
+h6.alt-font {
+	margin-bottom:5px;
+	font-weight: 600;
+}
+/* List Styles */
+.entry-content ol {
+    margin-left: 0;
+}
+.entry-content ol li {
+    padding-bottom: 10px;
+}
+.entry-content ul, 
+.entry-content ol {
+	padding-left: 16px;
+}
+
+/* List Styles */
+
+.entry-content ol li {
+	font-weight: bold;
+}
+.entry-content ol li p {
+	font-weight: normal;	
+}
+.entry-content ul, 
+.entry-content ol {
+	font-size: 14px;
+	line-height: 26px;
+}
+
+.entry-title {
+	font-family: 'Raleway';
+	font-size: 20px;
+	font-weight: 600;
+	text-align: left;
+}
+
+/* ## Buttons */
+.button-primary,
+.button-secondary,
+input[type="submit"] {
+	font-weight: 500;
+	text-decoration: none;
+}
+.button-primary:hover,
+.button-primary:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus,  
+.open > .dropdown-toggle.btn-primary {
+	text-decoration: none;
+}
+.button-secondary:hover,
+.button-secondary:focus {
+	background: none !important;
+	text-decoration: none;
+}
+
+/* # Header */
+.site-title {
+	font-weight: normal;
+}
+
+.slogan {
+	font-weight: 500;
+}
+
+.call-to-action {
+	text-align: center;
+}
+.call-to-action .p-button-primary {
+	text-align: center;
+}
+
+/* xs */
+#primary-navbar ul.navbar-nav {
+	text-align: center;		
+}
+
+/* ## Other Menus */
+.secondary-menu,
+.tertiary-menu {
+	text-align: right;	
+}
+.footer-center-menu {
+	text-align: left;	
+}
+
+/* ## Social Menus */
+#menu-social ul li a {
+    -webkit-font-smoothing: antialiased;
+}
+
+.mod-alpha h4 {
+	font-weight: 500;
+}
+
+/* ## Beta */
+.mod-beta-2 h5 {
+    font-weight: 400;
+	text-transform: none;
+}
+
+/* ## Gamma */
+.mod-gamma-2 p {
+	font-weight: 300;
+}
+.mod-gamma-2 h4 {
+    font-weight: 600;
+}
+
+/* Positioning */
+.p-button-primary,
+.p-button-secondary,
+.gridblock .p-button-primary,
+input[type="submit"] {
+	white-space: nowrap;
+}
+
+/* # Posts */
+.widget-title,
+.page-title {
+    font-weight: 500;
+}
+
+/* Comments */
+.comment-reply-title,
+.comments-title {
+	font-weight: 500;
+}
+
+/* Buttons */
+.form-submit .submit {
+	font-weight: 500;
+}
+
+/* Widget Area (Header, Sidebar, Footer) */
+#today a {
+	text-decoration: underline; 	
+}
+
+/* ## WooCommerce */
+.woocommerce p.buttons a.button:hover {
+    text-decoration: none;
+}
+.showcoupon,
+.payment_method_paypal label a,
+.woocommerce-message a {
+	text-decoration: underline;	
+}
+.showcoupon:hover,
+.showcoupon:focus,
+.payment_method_paypal label a:hover,
+.payment_method_paypal label a:focus,
+.woocommerce-message a:hover,
+.woocommerce-message a:focus {
+	text-decoration: none;	
+}
+.attribution {
+	text-align: left;
+}
+
 .xs-center,
 .mod-img,
 .mod-img-circle,
 .p-button-primary,
 .p-button-secondary {
+	text-align: center;
+}
+
+#colophon .boldgrid-widget,
+#colophon .attribution {
 	text-align: center;
 }
 
@@ -97,63 +274,10 @@ body,
 	.p-button-secondary {
 		text-align: left;
 	}
-}
-
-/*-----------------------------------------------
-## Typography
------------------------------------------------*/
-body {
-	color: #fff;	
-}
-p {
-	color: #eee;	
-	font-size: 16px;
-}
-h1 {
-	color: #eee;
-	font-family: 'Raleway';
-	font-size: 30px;
-	font-weight: 500;
-}
-h2 {
-	color: #f5d76e;	
-	font-family: 'Raleway';
-  	font-size: 24px;
-  	font-weight: 500;
-	margin: 15px 0 20px;
-}
-h3 {
-	color: #eee;	
-	font-family: 'Raleway';
-  	font-size: 20px;
-  	font-weight: 500;
-	margin: 15px 0 20px;
-}
-input, 
-button, 
-textarea,
-select {
-	color: #333;	
-}
-
-/* List Styles */
-.entry-content ol {
-    margin-left: 0;
-}
-.entry-content ol li {
-    color: #eee;
-	font-weight: bold;
-    padding-bottom: 10px;
-}
-.entry-content ol li p {
-	font-weight: normal;	
-}
-.entry-content ul, 
-.entry-content ol {
-	color: #fff;
-	font-size: 14px;
-	line-height: 26px;
-	padding-left: 16px;
+	#colophon .boldgrid-widget,
+	#colophon .attribution {
+		text-align: left;
+	}
 }
 
 /*-----------------------------------------------
@@ -171,20 +295,15 @@ select {
 .heading h3 {
     margin-top: 10px;
 }
-h2 i.fa {
+h5 i.fa {
 	padding-right: 10px;	
 }
 
 /* Page Titles */
 .entry-title {
 	display: block;
-	font-family: 'Raleway';
-	font-size: 20px;
-	font-weight: 600;
 	margin: 25px 0 75px;
 	position: relative;
-	text-align: left;
-	text-transform: uppercase;
     z-index: 1;
 }
 .entry-title > span {
@@ -201,14 +320,10 @@ h2 i.fa {
 a,
 .link-primary {
 	clear: both;
-	color: #f5d76e;		
 }
-.link-secondary {
-	color: #f5d76e;
-}
-a:hover, 
-a:focus {
-    color: #eee;
+.current_page_item a,
+.panel-footer a {
+	background: none;
 }
 
 /*-----------------------------------------------
@@ -217,11 +332,7 @@ a:focus {
 .button-primary,
 .button-secondary,
 input[type="submit"] {
-	border: 1px solid #f5d76e;
-	font-family: 'Raleway', sans-serif;
-	font-size: 15px;
-	font-weight: 500;
-	text-decoration: none;
+	background: none;
 	/* Border Radius */
 	-webkit-border-radius: 24px;
 	-moz-border-radius: 24px;
@@ -233,29 +344,10 @@ input[type="submit"] {
     -o-transition: all 0.5s;
 	transition: all 0.5s;
 }
-.button-primary,
-input[type="submit"] {
-	background: none;
-	color: #f5d76e;
-}
-.button-secondary {
-	background: #f5d76e;
-	color: #333;
-}
-.button-primary:hover,
-.button-primary:focus,
-input[type="submit"]:hover,
-input[type="submit"]:focus,  
-.open > .dropdown-toggle.btn-primary {
-    background-color: #f5d76e;
-	color: #202020;
-	text-decoration: none;
-}
+.panel-footer a,
 .button-secondary:hover,
 .button-secondary:focus {
 	background: none;
-	color: #f5d76e;
-	text-decoration: none;
 }
 
 /* Positioning */
@@ -264,7 +356,6 @@ input[type="submit"]:focus,
 .gridblock .p-button-primary,
 input[type="submit"] {
 	margin: 35px 0 25px;
-	white-space: nowrap;
 }
 .gridblock .p-button-secondary {
 	margin: 0 0 25px;
@@ -331,26 +422,9 @@ header.site-header {
 	}
 }
 
-.site-title {
-	font-weight: normal;
-}
-.site-description {
-	font-family: 'Raleway';	
-	color: #fff;
-	font-size: 18px;	
-}
-.slogan {
-	font-family: 'Raleway';
-	font-size: 40px;
-	font-weight: 500;
-}
 .call-to-action {
 	margin: 0 auto;
-	text-align: center;
 	width: 100%;
-}
-.call-to-action .p-button-primary {
-	text-align: center;
 }
 
 /*------------------------------------------------------------------------
@@ -372,39 +446,23 @@ header.site-header {
 	padding-right: 0;
 	width: 100%;
 }
-.navbar-default .navbar-nav > li > a {
-	font-family: 'Raleway';
-	font-size: 11px;
-	font-weight: 500;
-	text-transform: uppercase;
-}
 .navbar-nav > li > a {
     padding: 12px 10px;
 }
 
 /* Dropdown Child */
-.navbar-default .navbar-nav .dropdown-menu {
-	font-family: 'Raleway';
-	font-size: 12px;
-	text-transform: uppercase;	
-}
 .navbar-default .navbar-nav > li.dropdown:hover > a {
 	margin: 0;
 	-webkit-background-clip: padding-box;
 	background-clip: padding-box;
-	border: 1px solid #ccc;
-	border: 1px solid rgba(0,0,0,.15);
 	border-radius: 4px;
-	-webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
-	box-shadow: 0 6px 12px rgba(0,0,0,.175);
 	border-bottom-right-radius: 0;
 	border-bottom-left-radius: 0;
 }
 
 /* xs */
 #primary-navbar ul.navbar-nav {
-	width: 100%;
-	text-align: center;		
+	width: 100%;	
 }
 
 /* sm */
@@ -420,11 +478,9 @@ header.site-header {
 .secondary-menu,
 .tertiary-menu {
 	background: none;
-	text-align: right;	
 }
 .footer-center-menu {
 	background: none;
-	text-align: left;	
 }
 .footer-center-menu ul {
 	padding-left: 0px;
@@ -432,9 +488,7 @@ header.site-header {
 .secondary-menu li a,
 .tertiary-menu li a,
 .footer-center-menu li a {
-	font-size: 12px;
 	padding: 0 8px;
-	text-transform: uppercase;	
 }
 .secondary-menu li:after,
 .tertiary-menu li:after,
@@ -444,10 +498,8 @@ header.site-header {
 
 /* Footer */
 .disabled-footer .site-footer {
-	background: #000;
 	height: auto;
 	padding: .5em;
-	color: 	#f5d76e;
 }
 .page-template-default .site-footer {
 	padding: .45em;
@@ -484,10 +536,7 @@ header.site-header {
 }
 #menu-social ul li a {
 	display: inline-block;
-	font-size: 11px;
     padding: 0 8px;
-    text-transform: uppercase;
-	-webkit-font-smoothing: antialiased;
 }
 
 /*------------------------------------------------------------------------
@@ -559,15 +608,7 @@ header.site-header {
 /*-----------------------------------------------
 ## Global
 -----------------------------------------------*/
-.mod-blockquote {
-	border-left: 3px solid #eee;
-}
 .mod-blockquote p {
-	color: #eee;
-	font-family: "Raleway";
-	font-size: 18px;
-	font-weight: 100;
-	line-height: 32px;
 	padding-left: 15px;
 }
 
@@ -575,33 +616,17 @@ header.site-header {
 ## Alpha
 -----------------------------------------------*/
 .mod-alpha h2 {
-	color: #eee;
-	font-family: 'Raleway', sans-serif;
-	font-size: 18px;
-	font-weight: 500;
 	margin: 0;	
 	padding: 35px 0 20px;
-}
-.mod-alpha p {
-	font-size: 14px;	
 }
 
 /*-----------------------------------------------
 ## Beta
 -----------------------------------------------*/
-.mod-beta-2 h2 {
-	color: #f5d76e;
-	font-family: 'Open Sans';
-	font-size: 18px;
-    font-weight: 400;
-	text-align: center;	
-}
 .mod-beta-2 img {
 	margin-top: 20px;	
 }
 .mod-beta-1 p {
-	background: #0a0a05;
-	border: #f5d76e solid 2px;
 	margin: 20px 0;
 	min-height: 175px;
 	padding: 40px 30px;
@@ -613,7 +638,6 @@ header.site-header {
 	width: 100%;
 }
 .mod-beta-1 p:after {
-	border-color: #0a0a05 transparent;
 	border-style: solid;
 	border-width: 15px 15px 0;
 	bottom: -13px;
@@ -625,7 +649,6 @@ header.site-header {
 	z-index: 1;
 }
 .mod-beta-1 p:before {
-	border-color: #f5d76e transparent;
 	border-style: solid;
 	border-width: 15px 15px 0;
 	bottom: -16px;
@@ -640,7 +663,6 @@ header.site-header {
 /* md */
 @media (min-width: 992px) {
 	.mod-beta-1 p:after {
-		border-color: transparent #0a0a05;
 		border-style: solid;
 		border-width: 15px 0 15px 15px;
 		bottom: auto;
@@ -654,7 +676,6 @@ header.site-header {
 		z-index: 1;
 	}
 	.mod-beta-1 p:before {
-		border-color: transparent #f5d76e;
 		border-style: solid;
 		border-width: 17px 0 17px 17px;
 		bottom: auto;
@@ -677,23 +698,15 @@ header.site-header {
 	max-width: 100%;
 }
 .mod-gamma-2 {
-	background: #fff;
 	margin: 0 auto;
 	padding: 10px 15px;
 	width: 200px;
 	z-index: 9999;
 }
 .mod-gamma-2 p {
-	color: #333;
-	font-family: 'Raleway';
-	font-size: 14px;
-	font-weight: 300;
 	margin: 0;
 }
 .mod-gamma-2 h2 {
-	color: #333;
-    font-size: 13px;
-    font-weight: 600;
     margin: 0;	
 }
 
@@ -711,65 +724,28 @@ header.site-header {
 /*------------------------------------------------------------------------
 # Posts
 ------------------------------------------------------------------------*/
-.widget-title,
-.page-title {
-    color: #f5d76e;
-    font-family: "Raleway";
-    font-size: 18px;
-    font-weight: 500;
-    text-transform: uppercase;
-}
 .widget-area {
-    border: 1px solid #ccc;
     margin-top: 25px;
 	padding: 25px;	
 }
-.entry-meta {
-	color: #fff;	
-}
-#gform_confirmation_message_2 {
-	color: #fff;	
-}
-
-.comment-list li {
-	list-style: none;
-}
-
-.comment-content a,
-.comment-content p {
-	color: #333;
-}
 
 /* Comments */
-.comment-reply-title,
-.comments-title {
-	color: #f5d76e;
-    font-family: "Raleway";
-    font-size: 24px;
-	font-weight: 500;
-    text-transform: uppercase;
+.comment-list li {
+	list-style: none;
 }
 .comment-form-comment label {
     float: left;
     padding-right: 15px;
 }
-.comment-form-comment textarea {
-	color: #222;
-}.panel-footer {
+.panel-footer {
 	padding: 30px;
 }
 
 /* Buttons */
 .form-submit .submit {
 	background: none;
-	border: 1px solid #f5d76e;
-	color: #f5d76e;
-	font-family: 'Raleway', sans-serif;
-	font-size: 15px;
-	font-weight: 500;
 	margin: 25px 0 0;
     padding: 14px 24px;
-    text-transform: uppercase;
 	/* Border Radius */
 	-webkit-border-radius: 24px;
 	-moz-border-radius: 24px;
@@ -781,47 +757,6 @@ header.site-header {
     -o-transition: all 0.5s;
 	transition: all 0.5s;	
 }
-.form-submit .submit:hover,
-.form-submit .submit:focus {	
-    background-color: #f5d76e;
-    border-color: #f5d76e;
-	color: #333;
-}
-
-/* Widget Area (Header, Sidebar, Footer) */
-#secondary .table-striped > tbody > tr:nth-child(2n+1) td,
-#secondary .table-striped > tbody > tr #today a {
-    color: #333;
-}
-#secondary .table > tbody > tr td {
-	color: #fff;	
-}
-.widget-area .nav > li > a {
-    color: #fff;
-}
-.widget-area .nav > li > a:hover,
-.widget-area .nav > li > a:focus {
-	color: #333;	
-}
-#today a {
-	text-decoration: underline; 	
-}
-#secondary table th {
-	color: #f5d76e;	
-}
-table th {
-	color: #333;	
-}
-.table > tbody > tr td {
-	color: #333;	
-}
-#footer-widget-area ul li,
-#header-widget-area ul li {
-	color: #333;	
-}
-#footer-widget-area .widget-title {
-	color: #333;	
-}
 
 /*------------------------------------------------------------------------
 # Plugins
@@ -830,86 +765,22 @@ table th {
 /*-----------------------------------------------
 ## WooCommerce
 -----------------------------------------------*/
-.woocommerce div.product .woocommerce-tabs .panel {
-	background: none;	
-}
-.woocommerce div.product .woocommerce-tabs ul.tabs li.active {
-    color: #333;
-}
-.woocommerce #reviews #comments ol.commentlist li .comment-text p.meta {
-    color: #fff;
-}
-.woocommerce table.shop_table,
-.shop_table td,
-.shop_table thead tr th,
-.shop_table tbody th, 
-.shop_table tfoot td, 
-.shop_table tfoot th  {
-	border: 1px solid #fff;
-}
-.woocommerce #respond input#submit, 
-.woocommerce a.button,
-.woocommerce button.button, 
-.woocommerce input.button,
-.woocommerce p.buttons a.button {
-    background-color: #a46497;
-    color: #fff;
-}
-.woocommerce p.buttons a.button:hover {
-	background-color: #dad8da;
-    background-image: none;
-    color: #515151;
-    text-decoration: none;
-}
-.showcoupon,
-.payment_method_paypal label a,
-.woocommerce-message a {
-	color: #333;
-	text-decoration: underline;	
-}
-.showcoupon:hover,
-.showcoupon:focus,
-.payment_method_paypal label a:hover,
-.payment_method_paypal label a:focus,
-.woocommerce-message a:hover,
-.woocommerce-message a:focus {
-	color: #333;
-	text-decoration: none;	
-}
-#payment label {
-	color: #333;	
-}
-#payment .payment_box p {
-	color: #333;	
-}
-.widget-area caption {
-	color: #fff;	
-}
-
 /* Search Form */
 .form-control {
 	display: inline-block;	
+}
+.woocommerce div.product .woocommerce-tabs .panel {
+	background: none;	
 }
 
 /*------------------------------------------------------------------------
 # Footer
 ------------------------------------------------------------------------*/
 .site-footer {
-	background: #111;
 	padding: 10px 20px;	
 }
-#colophon p {
-	font-size: 14px;
-}
-.site-info p,
-.attribution,
-.attribution p {
-	font-size: 14px;
+.site-info p {
 	margin-left: -15px;
-}
-.attribution {
-	color: #eee;
-	text-align: left;
 }
 .footer-icons {
 	float: right;
@@ -927,11 +798,6 @@ table th {
 	#colophon #menu-social {
 		margin: 0 auto;
     	display: table;
-	}
-	
-	#colophon .boldgrid-widget,
-	#colophon .attribution {
-		text-align: center;
 	}
 }
 @media (min-width: 992px) {

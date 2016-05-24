@@ -5,6 +5,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	 */
 	$boldgrid_framework_configs['theme_name'] = 'boldgrid-evolv'; // Text domain
 	$boldgrid_framework_configs['scripts']['boldgrid-sticky-footer'] = true;
+	$boldgrid_framework_configs['customizer-options']['typography']['enabled'] = true;
 	$boldgrid_framework_configs['temp']['attribution_links'] = true;
 
 	/**
@@ -94,9 +95,27 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	$boldgrid_framework_configs['customizer-options']['colors']['light_text'] = '#ffffff';
 	$boldgrid_framework_configs['customizer-options']['colors']['dark_text'] = '#333333';
 
+	// Typography Headings
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['headings_font_family'] = 'Raleway';
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['headings_font_size'] = 18;
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['headings_text_transform'] = 'uppercase';
+
+	// Typography Alternate Headings
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['alternate_headings_font_family'] = 'Raleway';
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['alternate_headings_font_size'] = 16;
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['alternate_headings_text_transform'] = 'uppercase';
+
+	// Typography Navigation
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['navigation_font_family'] = 'Raleway';
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['navigation_font_size'] = 11;
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['navigation_text_transform'] = 'uppercase';
+
+	// Typography Body
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_font_family'] = 'Roboto';
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_font_size'] = 15;
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_line_height'] = 160;
+
 	// Fonts & Icons
-	$boldgrid_framework_configs['font']['translators'] = array ( 'on' );
-	$boldgrid_framework_configs['font']['types'] = array ( 'Raleway:300,400,500,600,700|Open+Sans:400' );
 	$boldgrid_framework_configs['social-icons']['type'] = 'icon';
 
 	// Menu Locations

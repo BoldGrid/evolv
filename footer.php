@@ -13,8 +13,10 @@
 	<footer id="colophon" class="site-footer" role="contentinfo" <?php BoldGrid_Framework_Schema::footer( true ); ?>>
 		<div class="container">
 			<div class="row">
-			<?php do_action( 'boldgrid_footer_top' ); ?>
-			<?php dynamic_sidebar( 'boldgrid-widget-3' ); ?>
+					<?php do_action( 'boldgrid_footer_top' ); ?>
+				<div class="col-md-12">
+					<?php dynamic_sidebar( 'boldgrid-widget-3' ); ?>
+				</div>
 				<div class="col-md-9">
 					<div class="site-info">
 						<?php do_action( 'boldgrid_menu_footer_center' ); ?>
