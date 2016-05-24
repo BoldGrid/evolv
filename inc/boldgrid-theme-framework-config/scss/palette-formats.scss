@@ -1,0 +1,240 @@
+/*------------------------------------------------------------------------
+# Variables
+------------------------------------------------------------------------*/
+$rgba_1 : rgba($palette-primary_1, 0.60);
+$rgba_4 : rgba($palette-primary_4, 0.40);
+$rgba_neutral : rgba($palette-primary-neutral-color, 0.6);
+
+/*------------------------------------------------------------------------
+# Palettes
+------------------------------------------------------------------------*/
+
+/*-----------------------------------------------
+## 1
+-----------------------------------------------*/
+.palette-primary {
+	.site-header {
+		background: $rgba_1;
+		color: $text-contrast-palette-primary_1;
+	}
+	.panel-footer,
+	header.smaller {
+		background:	$palette-primary_1;
+	}
+	.site-title a,
+	.menu-item a,
+	.navbar-default .navbar-nav > li > a {
+		color: $text-contrast-palette-primary_1;
+	}
+	.site-header .well {
+		background: $rgba_4;
+		border-color: $text-contrast-palette-primary_1;
+	}
+	.navbar-default .navbar-nav > li.dropdown:hover > a,
+	.dropdown .active,
+	ul.dropdown-menu,
+	.panel-default > .panel-heading {
+		background: $palette-primary_1;
+		color: $text-contrast-palette-primary_1;
+	}
+
+
+	/*-----------------------------------------------
+	## 2
+	-----------------------------------------------*/
+	.entry-title > span {
+		border-bottom: 1px solid $palette-primary_2;
+	}
+	.button-primary,
+	.button-secondary,
+	.form-submit .submit,
+	input[type="submit"] {
+		border: 1px solid $palette-primary_2;
+		color: $palette-primary_2;	
+	}
+	hr,
+	.button-secondary,
+	#colophon .nav>li>a:hover,
+	#colophon .nav>li>a:focus,
+	.dropdown-menu>li>a:hover,
+	.dropdown-menu>li>a:focus,
+	.button-primary:hover, 
+	.button-primary:focus,
+	.form-submit .submit:hover,
+	.form-submit .submit:focus,
+	input[type="submit"]:hover,
+	input[type="submit"]:focus {
+		background: $palette-primary_2;
+		color: $text-contrast-palette-primary_2;
+	}
+	.current_page_item a,
+	.panel-footer a,
+	.button-secondary:hover,
+	.button-secondary:focus {
+		background: none;
+		color: $text-contrast-palette-primary_2;
+	}
+	a,
+	i.fa,
+	.site-footer a,
+	#colophon li.menu-item > a {
+		color: $palette-primary_2;
+	}
+	.navbar-default .navbar-nav {
+		> {
+			.current-menu-parent > a {
+				color: $palette-primary_2;
+			}
+			.active > a {
+				color: $palette-primary_2;
+				background: none;
+				&:hover, &:focus {
+					color: $palette-primary_2;
+					background: none;
+				}
+			}
+			li > a {
+				&:hover, &:focus {
+					color: $palette-primary_2;
+					background: none;
+				}
+			}
+		}
+		.dropdown .dropdown-menu > {
+			.active > a {
+				background: $palette-primary_2;
+				color: $text-contrast-palette-primary_2;
+				&:hover, &:focus {
+					background: $palette-primary_2;
+					color: $text-contrast-palette-primary_2;
+				}
+			}
+			li > a {
+				&:hover, &:focus {
+					background: $palette-primary_2;
+					color: $text-contrast-palette-primary_2;
+				}
+			}
+		}
+	}
+	#header-widget-area .button-primary:hover, 
+	#header-widget-area .button-primary:focus {
+		background: none;
+		border: 1px solid $palette-primary_2;
+		color: $text-contrast-palette-primary_4;
+	}
+	#header-widget-area .button-primary {
+		background: $palette-primary_2;
+		color: $text-contrast-palette-primary_2;
+	}
+	.mod-beta-1 p {
+		border: 2px solid $palette-primary_2;	
+	}
+	.mod-beta-1 p::before {
+		border-color: $palette-primary_2 transparent;	
+	}
+	.mod-gamma-2 {
+		background: $palette-primary_2;
+	}
+	/* md */
+	@media (min-width: 992px) {
+		.mod-beta-1 p::before {
+			border-color: transparent $palette-primary_2;	
+		}
+	}
+	
+	/*-----------------------------------------------
+	## 3
+	-----------------------------------------------*/
+	h2,
+	.mod-alpha h2,
+	h3,
+	.widget-title,
+	i.fa:hover,
+	.mod-alpha i.fa,
+	.entry-title,
+	.page-title,
+	#reply-title,
+	#secondary table th {
+		color: $palette-primary_3;
+	}
+
+	/*-----------------------------------------------
+	## 4
+	-----------------------------------------------*/
+	.imhwpb-bg-2 {
+		background: $palette-primary_4;
+		color: $text-contrast-palette-primary_4;
+	}
+
+	/*-----------------------------------------------
+	## Neutral
+	-----------------------------------------------*/
+	.page-bg,
+	#boldgrid-sticky-push,
+	#boldgrid-sticky-filler {
+		background: $rgba_neutral;
+		color: $text-contrast-palette-primary-neutral-color;
+	}
+	.mod-beta-1 p,
+	#colophon .well,
+	.imhwpb-bg-1,
+	.site-footer {
+		background: $palette-primary-neutral-color;
+		color: $text-contrast-palette-primary-neutral-color;
+	}
+	.entry-content ul,
+	.entry-content ol li,
+	.site-footer .attribution,
+	.imhwpb-bg-1 p,
+	.mod-blockquote p,
+	.site-footer p,
+	#colophon li.current_page_item a,
+	#menu-social li a:hover i,
+	#menu-social li a:hover,
+	.entry-title {
+		color: $text-contrast-palette-primary-neutral-color;
+	}
+	.mod-blockquote {
+		border-left: 3px solid $text-contrast-palette-primary-neutral-color;
+	}
+	#colophon .well {
+		border-color: $text-contrast-palette-primary-neutral-color;
+	}
+	.mod-beta-1 p:after {
+		border-color: $palette-primary-neutral-color transparent;
+	}
+
+	/* md */
+	@media (min-width: 992px) {
+		.mod-beta-1 p:after {
+			border-color: transparent $palette-primary-neutral-color;
+		}
+	}
+
+	/*-----------------------------------------------
+	## 2 - Gamma Module
+	-----------------------------------------------*/
+	.mod-gamma-2 h2,
+	.mod-gamma-2 p {
+		color: $text-contrast-palette-primary_2;
+	}
+	/** Site Title **/
+	.slogan {
+		color: #fff;
+	}
+}
+
+.palette-primary.mce-content-body {
+	background: $palette-primary-neutral-color;
+	color: $text-contrast-palette-primary-neutral-color;
+}
+
+/** edit link only on home page **/
+body.palette-primary.page-template-page_home .entry-footer {
+	background: $palette-primary-neutral-color;
+}
+/** disabled footer transparent on inside pages **/
+body.palette-primary.page-template-default.disabled-footer .site-footer {
+	background: $rgba_neutral;
+}
