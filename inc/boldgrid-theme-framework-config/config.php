@@ -1,32 +1,51 @@
 <?php
 function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
-	/**
-	 * General Configs
-	 */
+
 	// Text domain.
 	$boldgrid_framework_configs['theme_name'] = 'boldgrid-evolv';
+
 	// Enable Sticky Footer.
 	$boldgrid_framework_configs['scripts']['boldgrid-sticky-footer'] = true;
+
 	// Enable typography controls.
 	$boldgrid_framework_configs['customizer-options']['typography']['enabled'] = true;
+
 	// Enable attribution links.
 	$boldgrid_framework_configs['temp']['attribution_links'] = true;
+
 	// Enable template wrapper.
 	$boldgrid_framework_configs['boldgrid-parent-theme'] = true;
+
 	// Specify the parent theme's name.
 	$boldgrid_framework_configs['parent-theme-name'] = 'prime';
-	// Select the footer template to use.
-	$boldgrid_framework_configs['template']['footer'] = '1';
+
 	// Select the header template to use.
 	$boldgrid_framework_configs['template']['header'] = 'generic';
-	// Assign menus, widgets, and actions to locations in generic header template.
+
+	// Select the footer template to use.
+	$boldgrid_framework_configs['template']['footer'] = 'generic';
+
+	// Assign Locations for Generic Header.
 	$boldgrid_framework_configs['template']['locations']['header'] = array(
+		'5' => array( '[menu]secondary' ),
 		'6' => array( '[action]boldgrid_site_identity' ),
-		'7' => array( '[menu]tertiary' ),
-		'8' => array( '[widget]boldgrid-widget-1', '[menu]secondary', '[action]boldgrid_primary_navigation' ),
-		'9' => array( '[menu]social' ),
-		'10' => array( '[widget]boldgrid-widget-2' ),
+		'7' => array( '[action]boldgrid_primary_navigation' ),
+		'8' => array( '[menu]tertiary' ),
 	);
+
+	// Assign Locations for Generic Header.
+	$boldgrid_framework_configs['template']['locations']['footer'] = array(
+		'1' => array( '[widget]boldgrid-widget-3' ),
+		'6' => array( '[menu]footer_center', '[action]boldgrid_display_attribution_links' ),
+		'7' => array( '[menu]social' ),
+	);
+
+	// Social Menus.
+	$boldgrid_framework_configs['menu']['footer_menus'][] = 'social';
+
+	// Set the Call To Action Widget to be on Home Page Only.
+	$boldgrid_framework_configs['template']['call-to-action'] = 'home-only';
+
 	/**
 	 * Customizer Configs
 	 */
