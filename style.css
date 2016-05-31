@@ -53,10 +53,10 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 -----------------------------------------------*/
 body,
 .custom-background {
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 .page-bg {
 	padding: 25px 0 60px;
@@ -98,10 +98,10 @@ h6.alt-font {
 }
 /* List Styles */
 .entry-content ol {
-    margin-left: 0;
+	margin-left: 0;
 }
 .entry-content ol li {
-    padding-bottom: 10px;
+	padding-bottom: 10px;
 }
 .entry-content ul,
 .entry-content ol {
@@ -181,7 +181,7 @@ input[type="submit"]:focus,
 
 /* ## Social Menus */
 #menu-social ul li a {
-    -webkit-font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
 }
 
 .mod-alpha h4 {
@@ -190,7 +190,7 @@ input[type="submit"]:focus,
 
 /* ## Beta */
 .mod-beta-2 h5 {
-    font-weight: 400;
+	font-weight: 400;
 	text-transform: none;
 }
 
@@ -199,7 +199,7 @@ input[type="submit"]:focus,
 	font-weight: 300;
 }
 .mod-gamma-2 h4 {
-    font-weight: 600;
+	font-weight: 600;
 }
 
 /* Positioning */
@@ -213,7 +213,7 @@ input[type="submit"] {
 /* # Posts */
 .widget-title,
 .page-title {
-    font-weight: 500;
+	font-weight: 500;
 }
 
 /* Comments */
@@ -234,7 +234,7 @@ input[type="submit"] {
 
 /* ## WooCommerce */
 .woocommerce p.buttons a.button:hover {
-    text-decoration: none;
+	text-decoration: none;
 }
 .showcoupon,
 .payment_method_paypal label a,
@@ -285,16 +285,16 @@ input[type="submit"] {
 ## Titles
 -----------------------------------------------*/
 .page-template-home .entry-title {
-    display: none;
+	display: none;
 }
 .hentry {
 	margin: 0 auto;
 }
 .heading {
-    margin-bottom: 15px;
+	margin-bottom: 15px;
 }
 .heading h3 {
-    margin-top: 10px;
+	margin-top: 10px;
 }
 h5 i.fa {
 	padding-right: 10px;
@@ -305,7 +305,7 @@ h5 i.fa {
 	display: block;
 	margin: 25px 0 75px;
 	position: relative;
-    z-index: 1;
+	z-index: 1;
 }
 .entry-title > span {
 	padding-bottom: 8px;
@@ -340,9 +340,9 @@ input[type="submit"] {
 	border-radius: 24px;
 	/* Transition */
 	-webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-   	-ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
 	transition: all 0.5s;
 }
 .panel-footer a,
@@ -371,7 +371,7 @@ input[type="submit"] {
 .button-primary,
 .button-secondary {
 	display: block;
-    margin-top: 15px;
+	margin-top: 15px;
 }
 
 /* sm */
@@ -379,7 +379,7 @@ input[type="submit"] {
 	.button-primary,
 	.button-secondary {
 		display: inline;
-    	margin-top: 0;
+		margin-top: 0;
 	}
 	.gridblock .p-button-secondary {
 		margin: 35px 0 25px;
@@ -400,20 +400,20 @@ hr {
 ------------------------------------------------------------------------*/
 /*Sticky Header Scroll*/
 header.site-header {
-  	left: 0;
- 	position: static;
- 	top: 25;
+	left: 0;
+	position: static;
+	top: 25;
 	width: 100%;
- 	z-index: 999;
+	z-index: 999;
 }
 header.smaller,
 .site-title a,
 header.site-header {
 	-webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-   	-ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
 }
 
 /* sm */
@@ -448,7 +448,7 @@ header.site-header {
 	width: 100%;
 }
 .navbar-nav > li > a {
-    padding: 12px 10px;
+	padding: 12px 10px;
 }
 
 /* Dropdown Child */
@@ -532,12 +532,12 @@ header.site-header {
 	float: right;
 }
 #menu-social ul li {
-    position: relative;
-    display:  inline-block;
+	position: relative;
+	display:  inline-block;
 }
 #menu-social ul li a {
 	display: inline-block;
-    padding: 0 8px;
+	padding: 0 8px;
 }
 
 /*------------------------------------------------------------------------
@@ -708,7 +708,7 @@ header.site-header {
 	margin: 0;
 }
 .mod-gamma-2 h2 {
-    margin: 0;
+	margin: 0;
 }
 
 /* md */
@@ -726,7 +726,7 @@ header.site-header {
 # Posts
 ------------------------------------------------------------------------*/
 .widget-area {
-    margin-top: 25px;
+	margin-top: 25px;
 	padding: 25px;
 }
 
@@ -735,8 +735,8 @@ header.site-header {
 	list-style: none;
 }
 .comment-form-comment label {
-    float: left;
-    padding-right: 15px;
+	float: left;
+	padding-right: 15px;
 }
 .panel-footer {
 	padding: 30px;
@@ -746,16 +746,16 @@ header.site-header {
 .form-submit .submit {
 	background: none;
 	margin: 25px 0 0;
-    padding: 14px 24px;
+	padding: 14px 24px;
 	/* Border Radius */
 	-webkit-border-radius: 24px;
 	-moz-border-radius: 24px;
 	border-radius: 24px;
 	/* Transition */
 	-webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-   	-ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
 	transition: all 0.5s;
 }
 
@@ -798,7 +798,7 @@ header.site-header {
 @media (max-width: 992px) {
 	#colophon #menu-social {
 		margin: 0 auto;
-    	display: table;
+		display: table;
 	}
 }
 @media (min-width: 992px) {
@@ -809,7 +809,7 @@ header.site-header {
 
 body.disabled-footer {
 	/** Important to override sticky footer JS **/
-    margin-bottom: 0px !important;
+	margin-bottom: 0px !important;
 }
 
 .disabled-footer .content-area {
@@ -819,7 +819,7 @@ body.disabled-footer {
 @media (min-width: 992px) {
 	body.disabled-footer {
 		/** Important to override sticky footer JS **/
-	    margin-bottom: 33px !important;
+		margin-bottom: 33px !important;
 	}
 }
 
@@ -829,7 +829,7 @@ html, body, .site, .site-content {
 }
 
 #boldgrid-sticky-wrap {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
 }
