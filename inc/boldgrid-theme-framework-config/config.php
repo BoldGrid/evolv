@@ -1,4 +1,4 @@
-<?php 
+<?php
 function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	/**
 	 * General Configs
@@ -84,7 +84,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 		case 21: //<-- Consulting
 			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][1]['default'] = true;
 			break;
-		
+
 		// Default Behavior
 		default:
 			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][0]['default'] = true;
@@ -119,22 +119,23 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.call-to-action .slogan' ]= array(
 		'type' => 'headings',
 		'round' => 'floor',
-		'amount' => 3.4, 
+		'amount' => 3.4,
 	);
-	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.mod-alpha h2' ]= array(
+
+	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.mod-alpha h2, .mod-beta-2 h2' ]= array(
 		'type' => 'headings',
 		'round' => 'floor',
-		'amount' => 1.5, 
-	);
-	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.mod-beta-2 h2' ]= array(
-		'type' => 'headings',
-		'round' => 'floor',
-		'amount' => 1.4, 
+		'amount' => 1.5,
 	);
 	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.mod-gamma-2 h2' ]= array(
 		'type' => 'headings',
 		'round' => 'floor',
-		'amount' => 1.1, 
+		'amount' => 1.1,
+	);
+	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.mod-gamma-2 p' ]= array(
+		'type' => 'subheadings',
+		'round' => 'floor',
+		'amount' => 1.1,
 	);
 
 	// Fonts & Icons
@@ -142,10 +143,10 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 
 	// Menu Locations
 	$boldgrid_framework_configs['menu']['locations']['social'] = "Footer Bottom Right";
-	$boldgrid_framework_configs['menu']['locations']['secondary'] = "Above Header"; 
+	$boldgrid_framework_configs['menu']['locations']['secondary'] = "Above Header";
 	$boldgrid_framework_configs['menu']['locations']['tertiary'] = "Below Header";
 	$boldgrid_framework_configs['menu']['footer_menus'][] = 'social';
-	
+
 	// Enable Sticky Nav in Header
 	$boldgrid_framework_configs['scripts']['boldgrid-sticky-nav'] = true;
 
@@ -178,7 +179,7 @@ HTML;
 	// Name Widget Areas
 	$boldgrid_framework_configs['widget']['sidebars']['boldgrid-widget-1']['name'] = 'Below Navigation';
 	$boldgrid_framework_configs['widget']['sidebars']['boldgrid-widget-2']['name'] = 'Above Content Area';
-	
+
 	// Configs above will override framework defaults
 	return $boldgrid_framework_configs;
 }
