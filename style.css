@@ -1,10 +1,10 @@
 /*
 Theme Name: Evolv
 Author: The BoldGrid Team
-Theme URI: http://www.boldgrid.com/evolv
-Author URI: http://www.boldgrid.com/the-team
+Theme URI: https://www.boldgrid.com/evolv
+Author URI: https://www.boldgrid.com/the-team
 Description: Designed specifically for use with the BoldGrid suite of plugins, all BoldGrid themes are highly customizable, responsive to a wide range of devices, and of course, beautiful. Every BoldGrid theme includes five pre-selected color palettes and an advanced tool for creating your own unique palette. In addition, all themes feature multiple menu locations and widget areas, which are easily customizable to suit your needs. So if you're looking for a theme that looks great, feels modern and professional, and offers plenty of features to make it your own, you've chosen well.
-Version: 1.18
+Version: 1.18.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: boldgrid-evolv
@@ -29,7 +29,6 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 	## Social Menus
 # GridBLocks
 	## Positioning
-	## Alternates
 # Modules
 	## Universal
 	## Global
@@ -50,13 +49,6 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 /*-----------------------------------------------
 ## Background
 -----------------------------------------------*/
-body,
-.custom-background {
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-}
 .page-bg {
 	padding: 25px 0 60px;
 }
@@ -82,20 +74,32 @@ body,
 /*-----------------------------------------------
 ## Typography
 -----------------------------------------------*/
-h1 {
-	font-weight: 500;
+h1,
+h2,
+h3,
+h6.alt-font,
+.slogan,
+.entry-title,
+.page-title,
+.widget-title,
+.comments-title,
+.comment-reply-title,
+.form-submit .submit,
+.mod-alpha h4,
+.mod-gamma-2 h4,
+.entry-content ol li {
+	font-weight: bold;
+}
+.entry-content ol li p {
+	font-weight: normal;	
 }
 h2,
 h3 {
-	font-weight: 500;
 	margin: 15px 0 20px;
 }
-
 h6.alt-font {
-	margin-bottom:5px;
-	font-weight: 600;
+	margin-bottom: 5px;
 }
-/* List Styles */
 .entry-content ol {
     margin-left: 0;
 }
@@ -106,140 +110,27 @@ h6.alt-font {
 .entry-content ol {
 	padding-left: 16px;
 }
-
-/* List Styles */
-
-.entry-content ol li {
-	font-weight: bold;
-}
-.entry-content ol li p {
-	font-weight: normal;	
-}
-.entry-content ul, 
-.entry-content ol {
-	font-size: 14px;
-	line-height: 26px;
-}
-
-.entry-title {
-	font-family: 'Raleway';
-	font-size: 20px;
-	font-weight: 600;
-	text-align: left;
-}
-
-/* ## Buttons */
-.button-primary,
-.button-secondary,
-input[type="submit"] {
-	font-weight: 500;
-	text-decoration: none;
-}
-.button-primary:hover,
-.button-primary:focus,
-input[type="submit"]:hover,
-input[type="submit"]:focus,  
-.open > .dropdown-toggle.btn-primary {
-	text-decoration: none;
-}
-.button-secondary:hover,
-.button-secondary:focus {
-	background: none !important;
-	text-decoration: none;
-}
-
-/* # Header */
-.site-title {
-	font-weight: normal;
-}
-
-.slogan {
-	font-weight: 500;
-}
-
-.call-to-action {
-	text-align: center;
-}
-.call-to-action .p-button-primary {
-	text-align: center;
-}
-
-/* xs */
-#primary-navbar ul.navbar-nav {
-	text-align: center;		
-}
-
-/* ## Other Menus */
-.secondary-menu,
-.tertiary-menu {
-	text-align: right;	
-}
-.footer-center-menu {
-	text-align: left;	
-}
-
-/* ## Social Menus */
 #menu-social ul li a {
     -webkit-font-smoothing: antialiased;
 }
-
-.mod-alpha h4 {
-	font-weight: 500;
-}
-
-/* ## Beta */
-.mod-beta-2 h5 {
-    font-weight: 400;
-	text-transform: none;
-}
-
-/* ## Gamma */
-.mod-gamma-2 p {
-	font-weight: 300;
-}
-.mod-gamma-2 h4 {
-    font-weight: 600;
-}
-
-/* Positioning */
 .p-button-primary,
 .p-button-secondary,
 .gridblock .p-button-primary,
 input[type="submit"] {
 	white-space: nowrap;
 }
-
-/* # Posts */
-.widget-title,
-.page-title {
-    font-weight: 500;
-}
-
-/* Comments */
-.comment-reply-title,
-.comments-title {
-	font-weight: 500;
-}
-
-/* Buttons */
-.form-submit .submit {
-	font-weight: 500;
-}
-
-/* Widget Area (Header, Sidebar, Footer) */
-#today a {
-	text-decoration: underline; 	
-}
-
-/* ## WooCommerce */
-.woocommerce p.buttons a.button:hover {
-    text-decoration: none;
-}
-.showcoupon,
-.payment_method_paypal label a,
-.woocommerce-message a {
-	text-decoration: underline;	
-}
+.button-primary,
+.button-secondary,
+input[type="submit"],
+.button-primary:hover,
+.button-primary:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus,  
+.open > .dropdown-toggle.btn-primary,
+.button-secondary:hover,
+.button-secondary:focus,
+.woocommerce p.buttons a.button:hover,
+.woocommerce p.buttons a.button:focus,
 .showcoupon:hover,
 .showcoupon:focus,
 .payment_method_paypal label a:hover,
@@ -248,18 +139,33 @@ input[type="submit"] {
 .woocommerce-message a:focus {
 	text-decoration: none;	
 }
+.showcoupon,
+.payment_method_paypal label a,
+.woocommerce-message a,
+#today a {
+	text-decoration: underline; 	
+}
+.call-to-action,
+.call-to-action .p-button-primary,
+#primary-navbar ul.navbar-nav {
+	text-align: center;		
+}
+.entry-title,
+.footer-center-menu,
 .attribution {
 	text-align: left;
 }
+.secondary-menu,
+.tertiary-menu {
+	text-align: right;	
+}
 
+/* xs */
 .xs-center,
 .mod-img,
 .mod-img-circle,
 .p-button-primary,
-.p-button-secondary {
-	text-align: center;
-}
-
+.p-button-secondary,
 #colophon .boldgrid-widget,
 #colophon .attribution {
 	text-align: center;
@@ -271,9 +177,7 @@ input[type="submit"] {
 	.mod-img,
 	.mod-img-circle,
 	.p-button-primary,
-	.p-button-secondary {
-		text-align: left;
-	}
+	.p-button-secondary,
 	#colophon .boldgrid-widget,
 	#colophon .attribution {
 		text-align: left;
@@ -326,6 +230,11 @@ a,
 	background: none;
 }
 
+/* Removes blue box in Chrome */
+*:focus {
+	outline: 0;
+}
+
 /*-----------------------------------------------
 ## Buttons
 -----------------------------------------------*/
@@ -347,7 +256,7 @@ input[type="submit"] {
 .panel-footer a,
 .button-secondary:hover,
 .button-secondary:focus {
-	background: none;
+	background: none !important;
 }
 
 /* Positioning */
@@ -397,7 +306,6 @@ hr {
 /*------------------------------------------------------------------------
 # Header
 ------------------------------------------------------------------------*/
-/*Sticky Header Scroll*/
 header.site-header {
   	left: 0;
  	position: static;
@@ -414,17 +322,16 @@ header.site-header {
     -o-transition: all 0.5s;
     transition: all 0.5s;
 }
+.call-to-action {
+	margin: 0 auto;
+	width: 100%;
+}
 
 /* sm */
 @media (min-width: 768px) {
 	header.site-header {
 		position: fixed;	
 	}
-}
-
-.call-to-action {
-	margin: 0 auto;
-	width: 100%;
 }
 
 /*------------------------------------------------------------------------
@@ -499,10 +406,10 @@ header.site-header {
 /* Footer */
 .disabled-footer .site-footer {
 	height: auto;
-	padding: .5em;
+	padding: 1em;
 }
 .page-template-default .site-footer {
-	padding: .45em;
+	padding: 1.5em 0 1em;
 }
 
 /* xs */
@@ -527,7 +434,7 @@ header.site-header {
 -----------------------------------------------*/
 #menu-social ul {
 	padding-left: 0px;
-	margin-top: 1em;
+	margin-top: 1.25em;
 	float: right;
 }
 #menu-social ul li {
@@ -608,6 +515,7 @@ header.site-header {
 /*-----------------------------------------------
 ## Global
 -----------------------------------------------*/
+blockquote p,
 .mod-blockquote p {
 	padding-left: 15px;
 }
@@ -618,6 +526,9 @@ header.site-header {
 .mod-alpha h2 {
 	margin: 0;	
 	padding: 35px 0 20px;
+}
+.mod-alpha i {
+	padding-right: 0.5em;
 }
 
 /*-----------------------------------------------
@@ -788,9 +699,27 @@ header.site-header {
 .footer-icons i {
 	padding-left: 7px;
 }
-
 #colophon #menu-social {
 	margin-top: -20px;
+}
+
+/* Disabled Footer */
+body.disabled-footer {
+	/** Important to override sticky footer JS **/
+    margin-bottom: 0px !important;
+}
+.disabled-footer .content-area {
+	margin-bottom:0px;
+}
+
+/* Sticky Footer */
+html, body, .site, .site-content {
+	height: 100%;
+}
+#boldgrid-sticky-wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
 }
 
 /* md */
@@ -799,36 +728,11 @@ header.site-header {
 		margin: 0 auto;
     	display: table;
 	}
-}
-@media (min-width: 992px) {
 	.attribution {
 		padding-bottom: 0;
 	}
-}
-
-body.disabled-footer {
-	/** Important to override sticky footer JS **/
-    margin-bottom: 0px !important;
-}
-
-.disabled-footer .content-area {
-	margin-bottom:0px;
-}
-
-@media (min-width: 992px) {
 	body.disabled-footer {
 		/** Important to override sticky footer JS **/
 	    margin-bottom: 33px !important;
 	}
-}
-
-/** Sticky Footer **/
-html, body, .site, .site-content {
-	height: 100%;
-}
-
-#boldgrid-sticky-wrap {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
 }
