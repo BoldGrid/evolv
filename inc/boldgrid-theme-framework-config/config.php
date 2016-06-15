@@ -4,8 +4,8 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	 * General Configs
 	 */
 	$boldgrid_framework_configs['theme_name'] = 'boldgrid-evolv'; // Text domain
-	$boldgrid_framework_configs['scripts']['boldgrid-sticky-footer'] = true;
 	$boldgrid_framework_configs['customizer-options']['typography']['enabled'] = true;
+	$boldgrid_framework_configs['scripts']['boldgrid-sticky-footer'] = true;
 	$boldgrid_framework_configs['temp']['attribution_links'] = true;
 
 	/**
@@ -111,17 +111,24 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['navigation_text_transform'] = 'uppercase';
 
 	// Typography Body
-	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_font_family'] = 'Roboto';
-	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_font_size'] = 15;
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_font_family'] = 'Sans-Serif';
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_font_size'] = 16;
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_line_height'] = 160;
 
+	// Typography Tagline Classes
+	$boldgrid_framework_configs['template']['tagline-classes'] = 'h5 alt-font';
+
 	// Typography Relationships
-	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.call-to-action .slogan' ]= array(
+	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.entry-header h1.entry-title' ]= array(
+		'type' => 'headings',
+		'round' => 'floor',
+		'amount' => 1.7,
+	);
+	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.call-to-action h2.slogan' ]= array(
 		'type' => 'headings',
 		'round' => 'floor',
 		'amount' => 3.4,
 	);
-
 	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.mod-alpha h2, .mod-beta-2 h2' ]= array(
 		'type' => 'headings',
 		'round' => 'floor',
@@ -138,7 +145,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 		'amount' => 1.1,
 	);
 
-	// Fonts & Icons
+	// Icons
 	$boldgrid_framework_configs['social-icons']['type'] = 'icon';
 
 	// Menu Locations
