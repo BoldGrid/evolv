@@ -125,12 +125,12 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 
 	// Typography Headings.
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['headings_font_family'] = 'Raleway';
-	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['headings_font_size'] = 18;
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['headings_font_size'] = 12;
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['headings_text_transform'] = 'uppercase';
 
 	// Typography Alternate Headings.
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['alternate_headings_font_family'] = 'Raleway';
-	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['alternate_headings_font_size'] = 16;
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['alternate_headings_font_size'] = 12;
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['alternate_headings_text_transform'] = 'uppercase';
 
 	// Typography Navigation.
@@ -139,11 +139,41 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['navigation_text_transform'] = 'uppercase';
 
 	// Typography Body.
-	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_font_family'] = 'Roboto';
-	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_font_size'] = 15;
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_font_family'] = 'Sans-Serif';
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_font_size'] = 16;
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_line_height'] = 160;
 
-	// Fonts & Icons.
+	// Typography Tagline Classes.
+	$boldgrid_framework_configs['template']['tagline-classes'] = 'h5 alt-font';
+
+	// Typography Relationships.
+	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.entry-header h1.entry-title'] = array(
+		'type' => 'headings',
+		'round' => 'floor',
+		'amount' => 1.7,
+	);
+	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.call-to-action h2.slogan'] = array(
+		'type' => 'headings',
+		'round' => 'floor',
+		'amount' => 3.4,
+	);
+	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.mod-alpha h2, .mod-beta-2 h2'] = array(
+		'type' => 'headings',
+		'round' => 'floor',
+		'amount' => 1.5,
+	);
+	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.mod-gamma-2 h2'] = array(
+		'type' => 'headings',
+		'round' => 'floor',
+		'amount' => 1.1,
+	);
+	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.mod-gamma-2 p'] = array(
+		'type' => 'subheadings',
+		'round' => 'floor',
+		'amount' => 1.1,
+	);
+
+	// Icons.
 	$boldgrid_framework_configs['social-icons']['type'] = 'icon';
 
 	// Social Menus.
