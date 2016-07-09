@@ -27,8 +27,6 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 	## Main Menu
 	## Other Menus
 	## Social Menus
-# GridBLocks
-	## Positioning
 # Modules
 	## Global
 	## Alpha
@@ -144,11 +142,7 @@ input[type="submit"]:focus,
 #today a {
 	text-decoration: underline;
 }
-.call-to-action,
-.call-to-action .p-button-primary,
-#primary-navbar ul.navbar-nav {
-	text-align: center;
-}
+
 .entry-title,
 .footer-center-menu,
 .attribution {
@@ -166,6 +160,9 @@ input[type="submit"]:focus,
 .p-button-primary,
 .p-button-secondary,
 #colophon .boldgrid-widget,
+.call-to-action,
+.call-to-action .p-button-primary,
+#primary-navbar ul.navbar-nav,
 #colophon .attribution {
 	text-align: center;
 }
@@ -241,11 +238,9 @@ a,
 .button-secondary,
 input[type="submit"] {
 	background: none;
-	/* Border Radius */
 	-webkit-border-radius: 24px;
 	-moz-border-radius: 24px;
 	border-radius: 24px;
-	/* Transition */
 	-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
 	-ms-transition: all 0.5s;
@@ -443,26 +438,6 @@ header.site-header {
 #menu-social ul li a {
 	display: inline-block;
 	padding: 0 8px;
-}
-
-/*------------------------------------------------------------------------
-# GridBlocks
-------------------------------------------------------------------------*/
-
-/*-----------------------------------------------
-## Positioning
------------------------------------------------*/
-.gridblock h1,
-.gridblock h2,
-.gridblock h3,
-.gridblock h4,
-.gridblock h5,
-.gridblock h6,
-.gridblock ol,
-.gridblock ul,
-.gridblock li,
-.gridblock p {
-	margin: 10px 0;
 }
 
 /*------------------------------------------------------------------------
@@ -668,7 +643,7 @@ body.disabled-footer {
 	margin-bottom: 0px !important;
 }
 .disabled-footer .content-area {
-	margin-bottom:0px;
+	margin-bottom: 0px;
 }
 
 /* Sticky Footer */
