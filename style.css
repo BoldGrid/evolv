@@ -641,16 +641,6 @@ body.disabled-footer {
 	margin-bottom: 0px;
 }
 
-/* Sticky Footer */
-html, body, .site, .site-content {
-	height: 100%;
-}
-#boldgrid-sticky-wrap {
-	min-height: 100%;
-	height: auto !important;
-	height: 100%;
-}
-
 /* md */
 @media (max-width: 992px) {
 	#colophon #menu-social {
