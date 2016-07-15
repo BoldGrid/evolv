@@ -68,6 +68,27 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 	background: none;
 	padding-top: 25px;
 }
+.page-template-default .entry-content {
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+@media (min-width: 768px) {
+	.page-template-default .entry-content {
+		width: 750px;
+	}
+}
+@media (min-width: 992px) {
+	.page-template-default .entry-content {
+		width: 970px;
+	}
+}
+@media (min-width: 1200px) {
+	.page-template-default .entry-content {
+		width: 1170px;
+	}
+}
 
 /*-----------------------------------------------
 ## Typography
@@ -296,16 +317,16 @@ hr {
 /*------------------------------------------------------------------------
 # Header
 ------------------------------------------------------------------------*/
-header.site-header {
+.site-header {
 	left: 0;
 	position: static;
 	top: 25;
 	width: 100%;
 	z-index: 999;
 }
-header.smaller,
+.smaller,
 .site-title a,
-header.site-header {
+.site-header {
 	-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
 	-ms-transition: all 0.5s;
@@ -319,7 +340,7 @@ header.site-header {
 
 /* sm */
 @media (min-width: 768px) {
-	header.site-header {
+	.site-header {
 		position: fixed;
 	}
 }
@@ -619,7 +640,7 @@ blockquote p,
 # Footer
 ------------------------------------------------------------------------*/
 .site-footer {
-	padding: 10px 20px;
+	padding: 1.5em 0;
 }
 .site-info p {
 	margin-left: -15px;
