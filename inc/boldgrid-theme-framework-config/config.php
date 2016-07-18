@@ -26,7 +26,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	$boldgrid_framework_configs['template']['footer'] = 'generic';
 
 	// Don't provide a container on main.
-	$boldgrid_framework_configs['template']['pages']['page_home.php']['container_class'] = '';
+	$boldgrid_framework_configs['template']['pages']['page_home.php']['entry-content'] = '';
 
 	// Give the default page a fluid container.
 	$boldgrid_framework_configs['template']['pages']['default']['container_class'] = '';

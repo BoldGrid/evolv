@@ -228,7 +228,7 @@ h5 i.fa {
 	position: relative;
 	z-index: 1;
 }
-.entry-title > span {
+.entry-title a {
 	padding-bottom: 8px;
 }
 
