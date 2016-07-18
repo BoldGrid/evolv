@@ -26,6 +26,12 @@ $rgba_neutral : rgba($palette-primary-neutral-color, 0.6);
 	.navbar-default .navbar-nav > li > a {
 		color: $text-contrast-palette-primary_1;
 	}
+	.secondary-menu,
+	.tertiary-menu {
+		.current-menu-item a {
+			color: $palette-primary_2;
+		}
+	}
 	.site-header .well {
 		background: $rgba_4;
 		border-color: $text-contrast-palette-primary_1;
