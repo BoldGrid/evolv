@@ -31,6 +31,9 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	// Give the default page a fluid container.
 	$boldgrid_framework_configs['template']['pages']['default']['container_class'] = '';
 
+	// Add container to call to action widget.
+	$boldgrid_framework_configs['template']['pages']['global']['call-to-action'] = 'container';
+
 	// Assign Locations for Generic Header.
 	$boldgrid_framework_configs['template']['locations']['header'] = array(
 		'5' => array( '[menu]secondary' ),
