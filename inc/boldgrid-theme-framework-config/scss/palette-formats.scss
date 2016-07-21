@@ -334,6 +334,16 @@ $rgba_neutral : rgba($palette-primary-neutral-color, 0.6);
 	.slogan {
 		color: #fff;
 	}
+	&.error404 {
+		.site-content {
+			background: $rgba_neutral;
+			color: $text-contrast-palette-primary-neutral-color;
+		}
+		.list-group-item {
+			border: 1px $palette-primary_2 solid;
+			background: $rgba_neutral;
+		}
+	}
 }
 
 .palette-primary.mce-content-body {
