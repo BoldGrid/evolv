@@ -221,7 +221,9 @@ HTML;
 	$boldgrid_framework_configs['menu']['locations']['social'] = 'Footer Bottom Right';
 	$boldgrid_framework_configs['menu']['locations']['secondary'] = 'Above Header';
 	$boldgrid_framework_configs['menu']['locations']['tertiary'] = 'Below Header';
+	$boldgrid_framework_configs['menu']['locations']['footer_center'] = 'Footer Left';
 	$boldgrid_framework_configs['menu']['footer_menus'][] = 'social';
+	$boldgrid_framework_configs['menu']['footer_menus'][] = 'footer_center';
 
 	// Name Widget Areas.
 	$boldgrid_framework_configs['widget']['sidebars']['boldgrid-widget-1']['name'] = 'Below Navigation';
