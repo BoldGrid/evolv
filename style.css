@@ -557,13 +557,13 @@ blockquote p,
 ## Gamma
 -----------------------------------------------*/
 .mod-gamma-1 {
-	margin: 20px auto 0;
-	max-width: 100%;
+	margin: 20px auto;
+	width: 100%;
 }
 .mod-gamma-2 {
 	margin: 0 auto;
 	padding: 10px 15px;
-	width: 200px;
+	width: 200px; /* image is sized to 200px (W) */
 	z-index: 9999;
 }
 .mod-gamma-2 p {
@@ -573,10 +573,20 @@ blockquote p,
 	margin: 0;
 }
 
-/* md */
-@media (min-width: 992px) {
+/* sm */
+@media (min-width: 768px) {
+	.mod-gamma-1 {
+		width: 100%;
+	}
 	.mod-gamma-2 {
 		width: 100%;
+	}
+}
+
+/* md */
+@media (min-width: 992px) {
+	.mod-gamma-1 {
+		width: 120%;
 	}
 }
 
