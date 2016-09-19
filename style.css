@@ -68,27 +68,6 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 	background: none;
 	padding-top: 25px;
 }
-.page-template-default .entry-content {
-	margin-right: auto;
-	margin-left: auto;
-	padding-left: 15px;
-	padding-right: 15px;
-}
-@media (min-width: 768px) {
-	.page-template-default .entry-content {
-		width: 750px;
-	}
-}
-@media (min-width: 992px) {
-	.page-template-default .entry-content {
-		width: 970px;
-	}
-}
-@media (min-width: 1200px) {
-	.page-template-default .entry-content {
-		width: 1170px;
-	}
-}
 
 /*-----------------------------------------------
 ## Typography
