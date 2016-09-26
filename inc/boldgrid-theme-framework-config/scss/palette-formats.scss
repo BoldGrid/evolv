@@ -83,7 +83,9 @@ $rgba_neutral : rgba($palette-primary-neutral-color, 0.6);
 	.dropdown-menu>li>a:focus,
 	input[type="submit"]:hover,
 	input[type="submit"]:focus,
-	.open > .dropdown-toggle.btn-primary {
+	.open > .dropdown-toggle.btn-primary,
+	.nav>li>a:focus,
+	.nav>li>a:hover {
 		background: $palette-primary_2;
 		color: $text-contrast-palette-primary_2;
 	}
@@ -336,7 +338,8 @@ $rgba_neutral : rgba($palette-primary-neutral-color, 0.6);
 	}
 	&.search,
 	&.single,
-	&.archive {
+	&.archive,
+	&.blog {
 		.site-content {
 			background: $rgba_neutral;
 			color: $text-contrast-palette-primary-neutral-color;
