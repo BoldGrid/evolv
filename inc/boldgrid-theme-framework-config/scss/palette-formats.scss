@@ -10,9 +10,10 @@ $rgba_neutral : rgba($palette-primary-neutral-color, 0.6);
 ------------------------------------------------------------------------*/
 .palette-primary {
 	color: $text-contrast-palette-primary-neutral-color;
-/*-----------------------------------------------
-## 1
------------------------------------------------*/
+
+	/*-----------------------------------------------
+	## 1
+	-----------------------------------------------*/
 	.site-header {
 		background: $rgba_1;
 		color: $text-contrast-palette-primary_1;
@@ -43,7 +44,6 @@ $rgba_neutral : rgba($palette-primary-neutral-color, 0.6);
 		background: $palette-primary_1;
 		color: $text-contrast-palette-primary_1;
 	}
-
 
 	/*-----------------------------------------------
 	## 2
@@ -217,7 +217,6 @@ $rgba_neutral : rgba($palette-primary-neutral-color, 0.6);
 		background: $palette-primary-neutral-color;
 		color: $text-contrast-palette-primary-neutral-color;
 	}
-	p,
 	a:hover,
 	a:focus,
 	.entry-meta,
@@ -227,10 +226,6 @@ $rgba_neutral : rgba($palette-primary-neutral-color, 0.6);
 	.site-footer p,
 	.entry-title,
 	.site-description,
-	.entry-content ul,
-	.entry-content ol,
-	.entry-content ul li,
-	.entry-content ol li,
 	#menu-social li a:hover,
 	#menu-social li a:hover i,
 	.site-footer .attribution,
