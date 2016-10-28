@@ -538,7 +538,7 @@ blockquote p,
 ## Gamma
 -----------------------------------------------*/
 .mod-gamma-1 {
-	margin: 20px auto;
+	margin: 20px auto 0;
 	width: 100%;
 }
 .mod-gamma-2 {
@@ -560,14 +560,17 @@ blockquote p,
 		width: 100%;
 	}
 	.mod-gamma-2 {
-		width: 100%;
+		width: 91%;
 	}
 }
 
 /* md */
 @media (min-width: 992px) {
 	.mod-gamma-1 {
-		width: 120%;
+		width: 100%;
+	}
+	.mod-gamma-2 {
+		width: 100%;
 	}
 }
 
