@@ -289,6 +289,9 @@ hr {
 	height: 2px;
 	margin-bottom: 30px;
 }
+.calendar_wrap .table-striped > tbody > tr:nth-of-type(2n+1) {
+	background: transparent;
+}
 
 /*------------------------------------------------------------------------
 # Header

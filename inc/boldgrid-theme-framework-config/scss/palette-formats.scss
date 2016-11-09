@@ -96,13 +96,15 @@ $rgba_neutral : rgba($palette-primary-neutral-color, 0.6);
 		color: $text-contrast-palette-primary_2;
 	}
 	.panel-footer a,
-	.current_page_item a {
+	.current_page_item a,
+	.site-header .widget.well li > a:hover {
 		color: $text-contrast-palette-primary_2;
 	}
 	a,
 	i.fa,
 	.site-footer a,
-	#colophon li.menu-item > a {
+	#colophon li.menu-item > a,
+	.site-header .widget.well a {
 		color: $palette-primary_2;
 	}
 	.navbar-default .navbar-nav {
@@ -201,6 +203,11 @@ $rgba_neutral : rgba($palette-primary-neutral-color, 0.6);
 		background: $palette-primary_4;
 		color: $text-contrast-palette-primary_4;
 	}
+	.site-header .widget.well,
+	.calendar_wrap caption,
+	.site-header .widget.well a:hover {
+		color: $text-contrast-palette-primary_4; 
+	}
 
 	/*-----------------------------------------------
 	## Neutral
@@ -283,7 +290,6 @@ $rgba_neutral : rgba($palette-primary-neutral-color, 0.6);
 	.woocommerce-message a:focus,
 	#footer-widget-area ul li,
 	#header-widget-area ul li,
-	#footer-widget-area .widget-title,
 	.comment-form-comment textarea,
 	.payment_method_paypal label a,
 	.payment_method_paypal label a:hover,
