@@ -77,15 +77,17 @@ $rgba_neutral : rgba($palette-primary-neutral-color, 0.6);
 	hr,
 	.button-primary:hover,
 	.button-primary:focus,
-	#colophon .nav>li>a:hover,
-	#colophon .nav>li>a:focus,
-	.dropdown-menu>li>a:hover,
-	.dropdown-menu>li>a:focus,
+	#colophon .nav > li > a:hover,
+	#colophon .nav > li > a:focus,
+	.dropdown-menu > li > a:hover,
+	.dropdown-menu > li > a:focus,
 	input[type="submit"]:hover,
 	input[type="submit"]:focus,
 	.open > .dropdown-toggle.btn-primary,
-	.nav>li>a:focus,
-	.nav>li>a:hover {
+	.nav > li > a:focus,
+	.nav > li > a:hover,
+	.pager li > a:hover,
+	.pager li > a:focus {
 		background: $palette-primary_2;
 		color: $text-contrast-palette-primary_2;
 	}
@@ -244,7 +246,8 @@ $rgba_neutral : rgba($palette-primary-neutral-color, 0.6);
 	.woocommerce #reviews #comments ol.commentlist li .comment-text p.meta {
 		color: $text-contrast-palette-primary-neutral-color;
 	}
-	.mod-blockquote {
+	.mod-blockquote,
+	blockquote {
 		border-left: 3px solid $text-contrast-palette-primary-neutral-color;
 	}
 	#colophon .well {
@@ -261,6 +264,10 @@ $rgba_neutral : rgba($palette-primary-neutral-color, 0.6);
 	.shop_table thead tr th,
 	.woocommerce table.shop_table {
 	    border: 1px solid $palette-primary-neutral-color;
+	}
+
+	.pager li > a {
+		border: 1px solid $text-contrast-palette-primary-neutral-color;
 	}
 
 	/* md */

@@ -220,7 +220,8 @@ a,
 	clear: both;
 }
 .current_page_item a,
-.panel-footer a {
+.panel-footer a,
+.pager li > a {
 	background: none;
 }
 
