@@ -187,6 +187,9 @@ input[type="submit"]:focus,
 .hentry {
 	margin: 0 auto;
 }
+.hentry:first-child ~ .hentry {
+	margin-top: 75px;
+}
 .heading {
 	margin-bottom: 15px;
 }
@@ -586,12 +589,16 @@ blockquote p,
 .search .site-content {
 	padding: 0;
 }
+
 /*------------------------------------------------------------------------
 # Posts
 ------------------------------------------------------------------------*/
 .widget-area {
 	margin-top: 25px;
 	padding: 25px;
+}
+.nav-links {
+	margin: 25px 0;
 }
 
 /* Comments */
