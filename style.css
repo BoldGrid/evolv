@@ -235,13 +235,7 @@ a,
 .button-secondary,
 input[type="submit"] {
 	background: none;
-	-webkit-border-radius: 24px;
-	-moz-border-radius: 24px;
 	border-radius: 24px;
-	-webkit-transition: all 0.5s;
-	-moz-transition: all 0.5s;
-	-ms-transition: all 0.5s;
-	-o-transition: all 0.5s;
 	transition: all 0.5s;
 }
 .panel-footer a,
@@ -310,10 +304,6 @@ hr {
 .smaller,
 .site-title a,
 .site-header {
-	-webkit-transition: all 0.5s;
-	-moz-transition: all 0.5s;
-	-ms-transition: all 0.5s;
-	-o-transition: all 0.5s;
 	transition: all 0.5s;
 }
 .call-to-action {
@@ -359,7 +349,6 @@ hr {
 /* Dropdown Child */
 .navbar-default .navbar-nav > li.dropdown:hover > a {
 	margin: 0;
-	-webkit-background-clip: padding-box;
 	background-clip: padding-box;
 	border-radius: 4px;
 	border-bottom-right-radius: 0;
@@ -483,8 +472,6 @@ blockquote p,
 	padding: 40px 30px;
 	position: relative;
 	/* Border Radius */
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
 	border-radius: 10px;
 	width: 100%;
 }
@@ -619,14 +606,8 @@ blockquote p,
 	margin: 25px 0 0;
 	padding: 14px 24px;
 	/* Border Radius */
-	-webkit-border-radius: 24px;
-	-moz-border-radius: 24px;
 	border-radius: 24px;
 	/* Transition */
-	-webkit-transition: all 0.5s;
-	-moz-transition: all 0.5s;
-	-ms-transition: all 0.5s;
-	-o-transition: all 0.5s;
 	transition: all 0.5s;
 }
 
