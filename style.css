@@ -51,8 +51,8 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 	padding: 25px 0 60px;
 }
 .imhwpb-bg-1 {
-	background: url('images/subtle-pattern-bg.png') repeat;
 	padding: 75px 0 60px;
+	background: url("images/subtle-pattern-bg.png") repeat;
 }
 .imhwpb-bg-2 {
 	padding: 75px 0 60px;
@@ -62,8 +62,8 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 ## Positioning
 -----------------------------------------------*/
 #content {
-	background: none;
 	padding-top: 25px;
+	background: none;
 }
 
 /*-----------------------------------------------
@@ -202,10 +202,10 @@ h5 i.fa {
 
 /* Page Titles */
 .entry-title {
-	display: block;
-	margin: 25px 0 75px;
 	position: relative;
 	z-index: 1;
+	display: block;
+	margin: 25px 0 75px;
 }
 .entry-title a {
 	padding-bottom: 8px;
@@ -234,9 +234,9 @@ a,
 .button-primary,
 .button-secondary,
 input[type="submit"] {
-	background: none;
 	border-radius: 24px;
-	transition: all 0.5s;
+	background: none;
+	transition: all .5s;
 }
 .panel-footer a,
 .button-secondary:hover,
@@ -283,9 +283,9 @@ input[type="submit"] {
 ## Et Cetera
 -----------------------------------------------*/
 hr {
-	border: 0;
-	height: 2px;
 	margin-bottom: 30px;
+	height: 2px;
+	border: 0;
 }
 .calendar_wrap .table-striped > tbody > tr:nth-of-type(2n+1) {
 	background: transparent;
@@ -295,16 +295,16 @@ hr {
 # Header
 ------------------------------------------------------------------------*/
 .site-header {
-	left: 0;
 	position: static;
 	top: 25;
-	width: 100%;
+	left: 0;
 	z-index: 999;
+	width: 100%;
 }
 .smaller,
 .site-title a,
 .site-header {
-	transition: all 0.5s;
+	transition: all .5s;
 }
 .call-to-action {
 	margin: 0 auto;
@@ -324,7 +324,7 @@ hr {
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-	background: transparent;       
+	background: transparent;
 }
 
 /*-----------------------------------------------
@@ -337,10 +337,10 @@ hr {
 	padding-right: 0;
 }
 .navbar-default {
-	background: none;
-	border: none;
 	padding-right: 0;
 	width: 100%;
+	border: none;
+	background: none;
 }
 .navbar-nav > li > a {
 	padding: 12px 10px;
@@ -349,10 +349,10 @@ hr {
 /* Dropdown Child */
 .navbar-default .navbar-nav > li.dropdown:hover > a {
 	margin: 0;
-	background-clip: padding-box;
 	border-radius: 4px;
 	border-bottom-right-radius: 0;
 	border-bottom-left-radius: 0;
+	background-clip: padding-box;
 }
 
 /* xs */
@@ -378,7 +378,7 @@ hr {
 	background: none;
 }
 .footer-center-menu ul {
-	padding-left: 0px;
+	padding-left: 0;
 }
 .secondary-menu li a,
 .tertiary-menu li a,
@@ -393,8 +393,8 @@ hr {
 
 /* Footer */
 .disabled-footer .site-footer {
-	height: auto;
 	padding: 1em;
+	height: auto;
 }
 .page-template-default .site-footer {
 	padding: 1.5em 0 1em;
@@ -408,8 +408,8 @@ hr {
 /* sm */
 @media (min-width: 768px) {
 	.call-to-action {
-		padding-bottom: 50px;
 		padding-top: 120px;
+		padding-bottom: 50px;
 		width: 60%;
 	}
 	.disabled-footer .content-area {
@@ -421,13 +421,13 @@ hr {
 ## Social Menus
 -----------------------------------------------*/
 #menu-social ul {
-	padding-left: 0px;
-	margin-top: 1.25em;
 	float: right;
+	margin-top: 1.25em;
+	padding-left: 0;
 }
 #menu-social ul li {
 	position: relative;
-	display:  inline-block;
+	display: inline-block;
 }
 #menu-social ul li a {
 	display: inline-block;
@@ -454,7 +454,7 @@ blockquote p,
 	padding: 35px 0 20px;
 }
 .mod-alpha i {
-	padding-right: 0.5em;
+	padding-right: .5em;
 }
 
 /*-----------------------------------------------
@@ -467,64 +467,64 @@ blockquote p,
 	margin-top: 20px;
 }
 .mod-beta-1 p {
-	margin: 20px 0;
-	min-height: 175px;
-	padding: 40px 30px;
 	position: relative;
+	margin: 20px 0;
+	padding: 40px 30px;
+	min-height: 175px;
+	width: 100%;
 	/* Border Radius */
 	border-radius: 10px;
-	width: 100%;
 }
 .mod-beta-1 p:after {
-	border-style: solid;
-	border-width: 15px 15px 0;
-	bottom: -13px;
-	content: '';
-	display: block;
-	left: 50%;
 	position: absolute;
-	width: 0;
+	bottom: -13px;
+	left: 50%;
 	z-index: 1;
+	display: block;
+	width: 0;
+	border-width: 15px 15px 0;
+	border-style: solid;
+	content: "";
 }
 .mod-beta-1 p:before {
-	border-style: solid;
-	border-width: 15px 15px 0;
-	bottom: -16px;
-	content: '';
-	display: block;
-	left: 50%;
 	position: absolute;
-	width: 0;
+	bottom: -16px;
+	left: 50%;
 	z-index: 0;
+	display: block;
+	width: 0;
+	border-width: 15px 15px 0;
+	border-style: solid;
+	content: "";
 }
 
 /* md */
 @media (min-width: 992px) {
 	.mod-beta-1 p:after {
-		border-style: solid;
-		border-width: 15px 0 15px 15px;
-		bottom: auto;
-		content: '';
-		display: block;
-		left: auto;
 		position: absolute;
-		right: -13px;
 		top: 19px;
-		width: 0;
+		right: -13px;
+		bottom: auto;
+		left: auto;
 		z-index: 1;
+		display: block;
+		width: 0;
+		border-width: 15px 0 15px 15px;
+		border-style: solid;
+		content: "";
 	}
 	.mod-beta-1 p:before {
-		border-style: solid;
-		border-width: 17px 0 17px 17px;
-		bottom: auto;
-		content: '';
-		display: block;
-		left: auto;
 		position: absolute;
-		right: -17px;
 		top: 17px;
-		width: 0;
+		right: -17px;
+		bottom: auto;
+		left: auto;
 		z-index: 0;
+		display: block;
+		width: 0;
+		border-width: 17px 0 17px 17px;
+		border-style: solid;
+		content: "";
 	}
 }
 
@@ -536,10 +536,10 @@ blockquote p,
 	width: 100%;
 }
 .mod-gamma-2 {
+	z-index: 9999;
 	margin: 0 auto;
 	padding: 10px 15px;
 	width: 200px; /* image is sized to 200px (W) */
-	z-index: 9999;
 }
 .mod-gamma-2 p {
 	margin: 0;
@@ -570,8 +570,8 @@ blockquote p,
 ------------------------------------------------------------------------*/
 /* Search Page */
 .search .jumbotron {
-	text-align: center;
 	background: none;
+	text-align: center;
 }
 .search .site-content {
 	padding: 0;
@@ -602,13 +602,13 @@ blockquote p,
 
 /* Buttons */
 .form-submit .submit {
-	background: none;
 	margin: 25px 0 0;
 	padding: 14px 24px;
 	/* Border Radius */
 	border-radius: 24px;
+	background: none;
 	/* Transition */
-	transition: all 0.5s;
+	transition: all .5s;
 }
 
 /*------------------------------------------------------------------------
@@ -647,17 +647,17 @@ blockquote p,
 
 /* Disabled Footer */
 body.disabled-footer {
-	margin-bottom: 0px !important;
+	margin-bottom: 0 !important;
 }
 .disabled-footer .content-area {
-	margin-bottom: 0px;
+	margin-bottom: 0;
 }
 
 /* md */
 @media (max-width: 992px) {
 	#colophon #menu-social {
-		margin: 0 auto;
 		display: table;
+		margin: 0 auto;
 	}
 	.attribution {
 		padding-bottom: 0;
