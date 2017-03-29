@@ -596,6 +596,10 @@ blockquote p,
 	float: left;
 	padding-right: 15px;
 }
+.panel,
+.panel-default {
+	border: none;
+}
 .panel-footer {
 	padding: 30px;
 }

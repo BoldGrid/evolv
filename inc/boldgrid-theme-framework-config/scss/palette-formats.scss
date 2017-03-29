@@ -18,7 +18,6 @@ $rgba_neutral : rgba($palette-primary-neutral-color, 0.6);
 		background: $rgba_1;
 		color: $text-contrast-palette-primary_1;
 	}
-	.panel-footer,
 	header.smaller {
 		background:	$palette-primary_1;
 	}
@@ -39,7 +38,6 @@ $rgba_neutral : rgba($palette-primary-neutral-color, 0.6);
 	}
 	.dropdown .active,
 	ul.dropdown-menu,
-	.panel-default > .panel-heading,
 	.navbar-default .navbar-nav > li.dropdown:hover > a {
 		background: $palette-primary_1;
 		color: $text-contrast-palette-primary_1;
@@ -109,6 +107,14 @@ $rgba_neutral : rgba($palette-primary-neutral-color, 0.6);
 	.site-header .widget.well a {
 		color: $palette-primary_2;
 	}
+	.woocommerce-MyAccount-navigation-link a {
+		color: $palette-primary_2 !important;
+	}
+	.woocommerce-MyAccount-navigation-link a:hover,
+	.woocommerce-MyAccount-navigation-link .color1-background-color {
+		background: $palette-primary_2 !important;
+		color: $text-contrast-palette-primary_2 !important;
+	}	
 	.navbar-default .navbar-nav {
 		> {
 			.current-menu-parent > a {
@@ -153,9 +159,14 @@ $rgba_neutral : rgba($palette-primary-neutral-color, 0.6);
 		border: 1px solid $palette-primary_2;
 		color: $text-contrast-palette-primary_4;
 	}
-	#header-widget-area .button-primary {
+	#header-widget-area .button-primary,
+	.mark,
+	mark {
 		background: $palette-primary_2;
 		color: $text-contrast-palette-primary_2;
+	}
+	.panel-default > .panel-heading {
+		border-color: $palette-primary_2;
 	}
 	.mod-beta-1 p {
 		border: 2px solid $palette-primary_2;
@@ -197,6 +208,12 @@ $rgba_neutral : rgba($palette-primary-neutral-color, 0.6);
 	.comment-reply-title {
 		color: $palette-primary_3;
 	}
+	ul.products li.product .price {
+		color: $palette-primary_3 !important;
+	}
+	#reviews #comments ol.commentlist li .comment-text {
+		border: 1px solid $palette-primary_3;
+	}
 
 	/*-----------------------------------------------
 	## 4
@@ -223,7 +240,10 @@ $rgba_neutral : rgba($palette-primary-neutral-color, 0.6);
 	.imhwpb-bg-1,
 	.site-footer,
 	.mod-beta-1 p,
-	#colophon .well, {
+	#colophon .well,
+	.panel,
+	.panel-default > .panel-heading,
+	.panel-footer {
 		background: $palette-primary-neutral-color;
 		color: $text-contrast-palette-primary-neutral-color;
 	}
@@ -243,7 +263,7 @@ $rgba_neutral : rgba($palette-primary-neutral-color, 0.6);
 	.widget-area .nav > li > a,
 	#colophon li.current_page_item a,
 	#secondary .table > tbody > tr td,
-	.woocommerce #reviews #comments ol.commentlist li .comment-text p.meta {
+	#reviews #comments ol.commentlist li .meta {
 		color: $text-contrast-palette-primary-neutral-color;
 	}
 	.mod-blockquote,
@@ -320,19 +340,6 @@ $rgba_neutral : rgba($palette-primary-neutral-color, 0.6);
 	.page-bg {
 		background: rgba(0, 0, 0, .60);
 	}
-	.woocommerce a.button,
-	.woocommerce button.button,
-	.woocommerce input.button,
-	.woocommerce p.buttons a.button,
-	.woocommerce #respond input#submit {
-	    background-color: #a46497;
-	    color: #fff;
-	}
-	.woocommerce p.buttons a.button:hover {
-		background-color: #dad8da;
-	    color: #515151;
-	}
-
 
 	/*-----------------------------------------------
 	## 2 - Gamma Module
