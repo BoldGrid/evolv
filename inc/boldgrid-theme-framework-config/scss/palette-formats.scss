@@ -73,6 +73,7 @@ $rgba_neutral : rgba($palette-primary-neutral-color, 0.6);
 		color: $text-contrast-palette-primary_2;
 	}
 	hr,
+	.alert-message .btn.button-primary,
 	.button-primary:hover,
 	.button-primary:focus,
 	#colophon .nav > li > a:hover,
@@ -211,7 +212,8 @@ $rgba_neutral : rgba($palette-primary-neutral-color, 0.6);
 	ul.products li.product .price {
 		color: $palette-primary_3 !important;
 	}
-	#reviews #comments ol.commentlist li .comment-text {
+	#reviews #comments ol.commentlist li .comment-text,
+	.alert-message .btn.button-primary {
 		border: 1px solid $palette-primary_3;
 	}
 
@@ -304,7 +306,7 @@ $rgba_neutral : rgba($palette-primary-neutral-color, 0.6);
 	button,
 	textarea,
 	select,
-	#payment label,
+	a.select2-choice:hover,
 	.showcoupon,
 	.showcoupon:hover,
 	.showcoupon:focus,
@@ -312,18 +314,11 @@ $rgba_neutral : rgba($palette-primary-neutral-color, 0.6);
 	.comment-content p,
 	.widget-area .nav > li > a:hover,
 	.widget-area .nav > li > a:focus,
-	.woocommerce-message a,
-	.woocommerce-message a:hover,
-	.woocommerce-message a:focus,
 	#footer-widget-area ul li,
 	#header-widget-area ul li,
 	.comment-form-comment textarea,
-	.payment_method_paypal label a,
-	.payment_method_paypal label a:hover,
-	.payment_method_paypal label a:focus,
 	#secondary .table-striped > tbody > tr #today a,
-	#secondary .table-striped > tbody > tr:nth-child(2n+1) td,
-	.woocommerce div.product .woocommerce-tabs ul.tabs li.active {
+	#secondary .table-striped > tbody > tr:nth-child(2n+1) td {
 		color: #333;
 	}
 
