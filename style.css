@@ -51,8 +51,8 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 	padding: 25px 0 60px;
 }
 .imhwpb-bg-1 {
-	padding: 75px 0 60px;
 	background: url("images/subtle-pattern-bg.png") repeat;
+	padding: 75px 0 60px;
 }
 .imhwpb-bg-2 {
 	padding: 75px 0 60px;
@@ -62,8 +62,8 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 ## Positioning
 -----------------------------------------------*/
 #content {
-	padding-top: 25px;
 	background: none;
+	padding-top: 25px;	
 }
 
 /*-----------------------------------------------
@@ -123,20 +123,9 @@ input[type="submit"]:hover,
 input[type="submit"]:focus,
 .open > .dropdown-toggle.btn-primary,
 .button-secondary:hover,
-.button-secondary:focus,
-.woocommerce p.buttons a.button:hover,
-.woocommerce p.buttons a.button:focus,
-.showcoupon:hover,
-.showcoupon:focus,
-.payment_method_paypal label a:hover,
-.payment_method_paypal label a:focus,
-.woocommerce-message a:hover,
-.woocommerce-message a:focus {
+.button-secondary:focus {
 	text-decoration: none;
 }
-.showcoupon,
-.payment_method_paypal label a,
-.woocommerce-message a,
 #today a {
 	text-decoration: underline;
 }
@@ -202,10 +191,10 @@ h5 i.fa {
 
 /* Page Titles */
 .entry-title {
-	position: relative;
-	z-index: 1;
 	display: block;
 	margin: 25px 0 75px;
+	position: relative;
+	z-index: 1;	
 }
 .entry-title a {
 	padding-bottom: 8px;
@@ -234,8 +223,8 @@ a,
 .button-primary,
 .button-secondary,
 input[type="submit"] {
-	border-radius: 24px;
 	background: none;
+	border-radius: 24px;
 	transition: all .5s;
 }
 .panel-footer a,
@@ -283,23 +272,39 @@ input[type="submit"] {
 ## Et Cetera
 -----------------------------------------------*/
 hr {
-	margin-bottom: 30px;
-	height: 2px;
 	border: 0;
+	height: 2px;
+	margin-bottom: 30px;
 }
 .calendar_wrap .table-striped > tbody > tr:nth-of-type(2n+1) {
 	background: transparent;
+}
+input,
+button,
+textarea,
+select,
+a.select2-choice:hover,
+.comment-content a,
+.comment-content p,
+.widget-area .nav > li > a:hover,
+.widget-area .nav > li > a:focus,
+#footer-widget-area ul li,
+#header-widget-area ul li,
+.comment-form-comment textarea,
+#secondary .table-striped > tbody > tr #today a,
+#secondary .table-striped > tbody > tr:nth-child(2n+1) td {
+	color: #333;
 }
 
 /*------------------------------------------------------------------------
 # Header
 ------------------------------------------------------------------------*/
 .site-header {
+	left: 0;
 	position: static;
 	top: 25;
-	left: 0;
-	z-index: 999;
 	width: 100%;
+	z-index: 999;
 }
 .smaller,
 .site-title a,
@@ -337,10 +342,10 @@ hr {
 	padding-right: 0;
 }
 .navbar-default {
-	padding-right: 0;
-	width: 100%;
-	border: none;
 	background: none;
+	border: none;
+	padding-right: 0;
+	width: 100%;	
 }
 .navbar-nav > li > a {
 	padding: 12px 10px;
@@ -348,11 +353,11 @@ hr {
 
 /* Dropdown Child */
 .navbar-default .navbar-nav > li.dropdown:hover > a {
-	margin: 0;
-	border-radius: 4px;
-	border-bottom-right-radius: 0;
-	border-bottom-left-radius: 0;
 	background-clip: padding-box;
+	border-radius: 4px;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	margin: 0;
 }
 
 /* xs */
@@ -393,8 +398,8 @@ hr {
 
 /* Footer */
 .disabled-footer .site-footer {
-	padding: 1em;
 	height: auto;
+	padding: 1em;
 }
 .page-template-default .site-footer {
 	padding: 1.5em 0 1em;
@@ -408,8 +413,8 @@ hr {
 /* sm */
 @media (min-width: 768px) {
 	.call-to-action {
-		padding-top: 120px;
 		padding-bottom: 50px;
+		padding-top: 120px;
 		width: 60%;
 	}
 	.disabled-footer .content-area {
@@ -467,64 +472,63 @@ blockquote p,
 	margin-top: 20px;
 }
 .mod-beta-1 p {
-	position: relative;
-	margin: 20px 0;
-	padding: 40px 30px;
-	min-height: 175px;
-	width: 100%;
-	/* Border Radius */
 	border-radius: 10px;
+	margin: 20px 0;
+	min-height: 175px;
+	padding: 40px 30px;
+	position: relative;
+	width: 100%;
 }
 .mod-beta-1 p:after {
-	position: absolute;
-	bottom: -13px;
-	left: 50%;
-	z-index: 1;
-	display: block;
-	width: 0;
-	border-width: 15px 15px 0;
 	border-style: solid;
-	content: "";
+	border-width: 15px 15px 0;
+	bottom: -13px;
+	display: block;
+	content: "";	
+	left: 50%;
+	position: absolute;
+	width: 0;
+	z-index: 1;
 }
 .mod-beta-1 p:before {
-	position: absolute;
-	bottom: -16px;
-	left: 50%;
-	z-index: 0;
-	display: block;
-	width: 0;
-	border-width: 15px 15px 0;
 	border-style: solid;
-	content: "";
+	border-width: 15px 15px 0;
+	bottom: -16px;
+	display: block;
+	content: "";	
+	left: 50%;
+	position: absolute;
+	width: 0;
+	z-index: 0;
 }
 
 /* md */
 @media (min-width: 992px) {
 	.mod-beta-1 p:after {
-		position: absolute;
-		top: 19px;
-		right: -13px;
-		bottom: auto;
-		left: auto;
-		z-index: 1;
-		display: block;
-		width: 0;
-		border-width: 15px 0 15px 15px;
 		border-style: solid;
+		border-width: 15px 0 15px 15px;
+		bottom: auto;
 		content: "";
+		display: block;
+		left: auto;
+		position: absolute;
+		right: -13px;
+		top: 19px;		
+		width: 0;
+		z-index: 1;
 	}
 	.mod-beta-1 p:before {
-		position: absolute;
-		top: 17px;
-		right: -17px;
-		bottom: auto;
-		left: auto;
-		z-index: 0;
-		display: block;
-		width: 0;
-		border-width: 17px 0 17px 17px;
 		border-style: solid;
+		border-width: 17px 0 17px 17px;
+		bottom: auto;
 		content: "";
+		display: block;
+		left: auto;
+		position: absolute;
+		right: -17px;
+		top: 17px;		
+		width: 0;
+		z-index: 0;
 	}
 }
 
@@ -536,30 +540,18 @@ blockquote p,
 	width: 100%;
 }
 .mod-gamma-2 {
-	z-index: 9999;
 	margin: 0 auto;
 	padding: 10px 15px;
 	width: 200px; /* image is sized to 200px (W) */
+	z-index: 9999;
 }
-.mod-gamma-2 p {
-	margin: 0;
-}
+.mod-gamma-2 p,
 .mod-gamma-2 h2 {
 	margin: 0;
 }
 
-/* sm */
-@media (min-width: 768px) {
-	.mod-gamma-1 {
-		width: 100%;
-	}
-}
-
 /* md */
 @media (min-width: 992px) {
-	.mod-gamma-1 {
-		width: 100%;
-	}
 	.mod-gamma-2 {
 		width: 100%;
 	}
@@ -622,16 +614,17 @@ blockquote p,
 /*-----------------------------------------------
 ## WooCommerce
 -----------------------------------------------*/
-/* Search Form */
-.form-control {
-	display: inline-block;
-}
 .woocommerce div.product .woocommerce-tabs .panel {
 	background: none;
 }
 .woocommerce-account td.download-actions .btn.button-primary,
 .woocommerce-account p.order-again .btn.button-primary {
 	padding: 15px 30px;
+}
+
+/* Search Form */
+.form-control {
+	display: inline-block;
 }
 
 /*------------------------------------------------------------------------
