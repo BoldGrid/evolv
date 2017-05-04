@@ -338,6 +338,12 @@ $rgba_neutral : rgba($palette-primary-neutral-color, 0.6);
 	&.woocommerce-page .color-1-text-contrast-hover:focus {
 		color: $text-contrast-palette-primary_1 !important;
 	}
+	&.woocommerce div.product .stock.out-of-stock {
+		color: $palette-primary_2;
+	}
+	&.woocommerce div.product .stock {
+		color: $text-contrast-palette-primary-neutral-color;
+	}
 }
 
 .palette-primary.mce-content-body {

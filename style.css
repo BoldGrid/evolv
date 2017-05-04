@@ -1,4 +1,7 @@
-/*
+.entry-content ul,
+.entry-content ol {
+	padding-left: 16px;
+}/*
 Theme Name: Evolv
 Author: The BoldGrid Team
 Theme URI: https://www.boldgrid.com/evolv
