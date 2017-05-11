@@ -363,6 +363,13 @@ a.select2-choice:hover,
 	margin: 0;
 }
 
+.nav .open > a,
+.nav .open > a:focus,
+.nav .open > a:hover {
+	background: none;
+	border: none; 
+}
+
 /* xs */
 #primary-navbar ul.navbar-nav {
 	width: 100%;
