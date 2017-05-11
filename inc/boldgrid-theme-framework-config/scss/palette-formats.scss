@@ -148,11 +148,9 @@ $rgba_neutral : rgba($palette-primary-neutral-color, 0.6);
 			}
 		}
 	}
-	.navbar-default .navbar-toggle .icon-bar,
-	.navbar-default .navbar-toggle:hover .icon-bar,
-	.navbar-default .navbar-toggle:focus .icon-bar {
+	.navbar-default .navbar-toggle .icon-bar {
 		background-color: $palette-primary_2;
-	}	
+	}
 	#header-widget-area .button-primary:hover,
 	#header-widget-area .button-primary:focus {
 		background: none;
@@ -216,7 +214,10 @@ $rgba_neutral : rgba($palette-primary-neutral-color, 0.6);
 	.navbar-default .navbar-toggle:hover,
 	.navbar-default .navbar-toggle:focus {
 		background: $palette-primary_3;
-		color: $text-contrast-palette-primary_3;
+	}
+	.navbar-default .navbar-toggle:hover .icon-bar,
+	.navbar-default .navbar-toggle:focus .icon-bar {
+		background: $text-contrast-palette-primary_3;
 	}	
 
 	/*-----------------------------------------------
