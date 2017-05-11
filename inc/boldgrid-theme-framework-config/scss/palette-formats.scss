@@ -148,6 +148,11 @@ $rgba_neutral : rgba($palette-primary-neutral-color, 0.6);
 			}
 		}
 	}
+	.navbar-default .navbar-toggle .icon-bar,
+	.navbar-default .navbar-toggle:hover .icon-bar,
+	.navbar-default .navbar-toggle:focus .icon-bar {
+		background-color: $palette-primary_2;
+	}	
 	#header-widget-area .button-primary:hover,
 	#header-widget-area .button-primary:focus {
 		background: none;
@@ -160,7 +165,8 @@ $rgba_neutral : rgba($palette-primary-neutral-color, 0.6);
 		background: $palette-primary_2;
 		color: $text-contrast-palette-primary_2;
 	}
-	.panel-default > .panel-heading {
+	.panel-default > .panel-heading,
+	.navbar-default .navbar-toggle {
 		border-color: $palette-primary_2;
 	}
 	.mod-beta-1 p {
@@ -207,6 +213,11 @@ $rgba_neutral : rgba($palette-primary-neutral-color, 0.6);
 	.alert-message .btn.button-primary {
 		border: 1px solid $palette-primary_3;
 	}
+	.navbar-default .navbar-toggle:hover,
+	.navbar-default .navbar-toggle:focus {
+		background: $palette-primary_3;
+		color: $text-contrast-palette-primary_3;
+	}	
 
 	/*-----------------------------------------------
 	## 4
