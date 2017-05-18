@@ -3,6 +3,7 @@
 ------------------------------------------------------------------------*/
 $rgba_1 : rgba($palette-primary_1, 0.60);
 $rgba_4 : rgba($palette-primary_4, 0.40);
+$rgba_3 : rgba($palette-primary_3, 0.75);
 $rgba_neutral : rgba($palette-primary-neutral-color, 0.6);
 
 /*------------------------------------------------------------------------
@@ -218,6 +219,32 @@ $rgba_neutral : rgba($palette-primary-neutral-color, 0.6);
 	.navbar-default .navbar-toggle:focus .icon-bar {
 		background: $text-contrast-palette-primary_3;
 	}	
+
+	/* Gallery Captions */
+	.wc-gallery-captions-showon .gallery-caption, 
+	.wc-gallery-captions-onhover .gallery-caption {
+		background: $rgba_3;
+		color: $text-contrast-palette-primary_3;
+	}
+	.wc-gallery-captions-show .gallery-caption,
+	.wc-gallery-captions-onpopup .gallery-caption  {
+		background: $palette-primary_3;
+		color: $text-contrast-palette-primary_3;
+	}
+	.wc-gallery .gallery-caption {
+		h2,
+		h3,
+		h4 {
+			color: $text-contrast-palette-primary_3;
+		}
+	}
+	.mfp-title {
+		h2,
+		h3,
+		h4 {
+			color: #fff !important;
+		}
+	}
 
 	/*-----------------------------------------------
 	## 4
