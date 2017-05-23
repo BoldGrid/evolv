@@ -75,8 +75,8 @@ $rgba_neutral : rgba($palette-primary-neutral-color, 0.6);
 		color: $text-contrast-palette-primary_2;
 	}
 	hr,
-  .nav > li > a:focus i.fa,
-  .nav > li > a:hover i.fa,
+	.nav > li > a:focus i.fa,
+	.nav > li > a:hover i.fa,
 	.alert .btn.button-primary,
 	.woocommerce-Message .btn.button-primary,
 	.button-primary:hover,
@@ -109,7 +109,7 @@ $rgba_neutral : rgba($palette-primary-neutral-color, 0.6);
 	a,
 	i.fa,
 	.site-footer a,
-  .menu-item a,
+	.menu-item a,
 	#colophon li.menu-item > a,
 	.site-header .widget.well a {
 		color: $palette-primary_2;
@@ -311,7 +311,7 @@ $rgba_neutral : rgba($palette-primary-neutral-color, 0.6);
 		border-color: $palette-primary-neutral-color transparent;
 	}
 	.widget-area {
-	    border: 1px solid $palette-primary-neutral-color;
+			border: 1px solid $palette-primary-neutral-color;
 	}
 	.pager li > a {
 		border: 1px solid $text-contrast-palette-primary-neutral-color;
