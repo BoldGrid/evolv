@@ -1,7 +1,4 @@
-.entry-content ul,
-.entry-content ol {
-	padding-left: 16px;
-}/*
+/*
 Theme Name: Evolv
 Author: The BoldGrid Team
 Theme URI: https://www.boldgrid.com/evolv
@@ -66,7 +63,7 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 -----------------------------------------------*/
 #content {
 	background: none;
-	padding-top: 25px;	
+	padding-top: 25px;
 }
 
 /*-----------------------------------------------
@@ -82,7 +79,6 @@ h6.alt-font,
 .widget-title,
 .comments-title,
 .comment-reply-title,
-.form-submit .submit,
 .mod-alpha h4,
 .mod-gamma-2 h4,
 .entry-content ol li {
@@ -111,19 +107,10 @@ h6.alt-font {
 #menu-social ul li a {
 	-webkit-font-smoothing: antialiased;
 }
-.p-button-primary,
-.p-button-secondary,
-.gridblock .p-button-primary,
-input[type="submit"] {
-	white-space: nowrap;
-}
 .button-primary,
 .button-secondary,
-input[type="submit"],
 .button-primary:hover,
 .button-primary:focus,
-input[type="submit"]:hover,
-input[type="submit"]:focus,
 .open > .dropdown-toggle.btn-primary,
 .button-secondary:hover,
 .button-secondary:focus {
@@ -133,9 +120,7 @@ input[type="submit"]:focus,
 	text-decoration: underline;
 }
 
-.entry-title,
-.footer-center-menu,
-.attribution {
+.entry-title {
 	text-align: left;
 }
 .secondary-menu,
@@ -153,8 +138,7 @@ input[type="submit"]:focus,
 .call-to-action,
 .call-to-action .p-button-primary,
 #primary-navbar ul.navbar-nav,
-.navbar-default .navbar-nav .open .dropdown-menu > li > a,
-#colophon .attribution {
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
 	text-align: center;
 }
 
@@ -166,8 +150,7 @@ input[type="submit"]:focus,
 	.p-button-primary,
 	.p-button-secondary,
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a,
-	#colophon .boldgrid-widget,
-	#colophon .attribution {
+	#colophon .boldgrid-widget {
 		text-align: left;
 	}
 }
@@ -217,7 +200,6 @@ a,
 	clear: both;
 }
 .current_page_item a,
-.panel-footer a,
 .pager li > a {
 	background: none;
 }
@@ -226,32 +208,20 @@ a,
 ## Buttons
 -----------------------------------------------*/
 .button-primary,
-.button-secondary,
-input[type="submit"] {
-	background: none;
+.button-secondary {
 	border-radius: 24px;
+	padding: 14px 24px;
 	transition: all .5s;
-}
-.panel-footer a,
-.button-secondary:hover,
-.button-secondary:focus {
-	background: none !important;
 }
 
 /* Positioning */
 .p-button-primary,
 .p-button-secondary,
-.gridblock .p-button-primary,
-input[type="submit"] {
+.gridblock .p-button-primary {
 	margin: 35px 0 25px;
 }
 .gridblock .p-button-secondary {
 	margin: 0 0 25px;
-}
-.button-primary,
-.button-secondary,
-input[type="submit"] {
-	padding: 14px 24px;
 }
 
 /* Block vs. Inline */
@@ -285,17 +255,9 @@ hr {
 	background: transparent;
 }
 input,
-button,
-textarea,
 select,
-a.select2-choice:hover,
-.comment-content a,
-.comment-content p,
-.widget-area .nav > li > a:hover,
-.widget-area .nav > li > a:focus,
 #footer-widget-area ul li,
 #header-widget-area ul li,
-.comment-form-comment textarea,
 #secondary .table-striped > tbody > tr #today a,
 #secondary .table-striped > tbody > tr:nth-child(2n+1) td {
 	color: #333;
@@ -318,6 +280,7 @@ a.select2-choice:hover,
 }
 .call-to-action {
 	margin: 0 auto;
+	padding-top: 50px;
 	width: 100%;
 }
 
@@ -325,17 +288,17 @@ a.select2-choice:hover,
 @media (min-width: 768px) {
 	.site-header {
 		position: fixed;
+	}	
+	.call-to-action {
+		padding-bottom: 50px;
+		padding-top: 120px;
+		width: 60%;
 	}
 }
 
 /*------------------------------------------------------------------------
 # Navigation
 ------------------------------------------------------------------------*/
-.navbar-default .navbar-nav > .open > a,
-.navbar-default .navbar-nav > .open > a:hover,
-.navbar-default .navbar-nav > .open > a:focus {
-	background: transparent;
-}
 
 /*-----------------------------------------------
 ## Main Menu
@@ -349,27 +312,18 @@ a.select2-choice:hover,
 .navbar-default {
 	background: none;
 	border: none;
-	padding-right: 0;
-	width: 100%;	
 }
 .navbar-nav > li > a {
 	padding: 12px 10px;
 }
 
-/* Dropdown Child */
-.navbar-default .navbar-nav > li.dropdown:hover > a {
-	background-clip: padding-box;
-	border-radius: 4px;
-	border-bottom-left-radius: 0;
-	border-bottom-right-radius: 0;
-	margin: 0;
-}
-
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus,
 .nav .open > a,
 .nav .open > a:focus,
 .nav .open > a:hover {
 	background: none;
-	border: none; 
 }
 
 /* xs */
@@ -387,16 +341,6 @@ a.select2-choice:hover,
 /*-----------------------------------------------
 ## Other Menus
 -----------------------------------------------*/
-.secondary-menu,
-.tertiary-menu {
-	background: none;
-}
-.footer-center-menu {
-	background: none;
-}
-.footer-center-menu ul {
-	padding-left: 0;
-}
 .secondary-menu li a,
 .tertiary-menu li a,
 .footer-center-menu li a {
@@ -408,43 +352,12 @@ a.select2-choice:hover,
 	content: "";
 }
 
-/* Footer */
-.disabled-footer .site-footer {
-	height: auto;
-	padding: 1em;
-}
-.page-template-default .site-footer {
-	padding: 1.5em 0 1em;
-}
-
-/* xs */
-
-.call-to-action {
-	padding-top: 50px;
-}
-/* sm */
-@media (min-width: 768px) {
-	.call-to-action {
-		padding-bottom: 50px;
-		padding-top: 120px;
-		width: 60%;
-	}
-	.disabled-footer .content-area {
-		margin-bottom: 0;
-	}
-}
-
 /*-----------------------------------------------
 ## Social Menus
 -----------------------------------------------*/
 #menu-social ul {
 	float: right;
 	margin-top: 1.25em;
-	padding-left: 0;
-}
-#menu-social ul li {
-	position: relative;
-	display: inline-block;
 }
 #menu-social ul li a {
 	display: inline-block;
@@ -584,10 +497,6 @@ blockquote p,
 /*------------------------------------------------------------------------
 # Posts
 ------------------------------------------------------------------------*/
-.widget-area {
-	margin-top: 25px;
-	padding: 25px;
-}
 .nav-links {
 	margin: 25px 0;
 }
@@ -596,27 +505,12 @@ blockquote p,
 .comment-list li {
 	list-style: none;
 }
-.comment-form-comment label {
-	float: left;
-	padding-right: 15px;
-}
 .panel,
 .panel-default {
 	border: none;
 }
 .panel-footer {
 	padding: 30px;
-}
-
-/* Buttons */
-.form-submit .submit {
-	margin: 25px 0 0;
-	padding: 14px 24px;
-	/* Border Radius */
-	border-radius: 24px;
-	background: none;
-	/* Transition */
-	transition: all .5s;
 }
 
 /*------------------------------------------------------------------------
@@ -633,25 +527,11 @@ blockquote p,
 	padding: 15px 30px;
 }
 
-/* Search Form */
-.form-control {
-	display: inline-block;
-}
-
 /*------------------------------------------------------------------------
 # Footer
 ------------------------------------------------------------------------*/
 .site-footer {
 	padding: 1.5em 0;
-}
-.site-info p {
-	margin-left: -15px;
-}
-.footer-icons {
-	float: right;
-}
-.footer-icons i {
-	padding-left: 7px;
 }
 #colophon #menu-social {
 	margin-top: -20px;
@@ -659,10 +539,21 @@ blockquote p,
 
 /* Disabled Footer */
 body.disabled-footer {
-	margin-bottom: 0 !important;
+	margin-bottom: 0;
 }
 .disabled-footer .content-area {
 	margin-bottom: 0;
+}
+.disabled-footer .site-footer {
+	height: auto;
+	padding: 1em;
+}
+
+/* sm */
+@media (min-width: 768px) {
+	.disabled-footer .content-area {
+		margin-bottom: 0;
+	}
 }
 
 /* md */
@@ -670,11 +561,5 @@ body.disabled-footer {
 	#colophon #menu-social {
 		display: table;
 		margin: 0 auto;
-	}
-	.attribution {
-		padding-bottom: 0;
-	}
-	body.disabled-footer {
-		margin-bottom: 33px !important;
 	}
 }

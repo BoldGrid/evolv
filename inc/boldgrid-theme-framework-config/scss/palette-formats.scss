@@ -27,7 +27,6 @@ $rgba_neutral : rgba($palette-primary-neutral-color, 0.6);
 		color: $text-contrast-palette-primary_1;
 	}
 	.secondary-menu,
-
 	.tertiary-menu {
 		.current-menu-item a {
 			color: $palette-primary_2;
@@ -58,13 +57,8 @@ $rgba_neutral : rgba($palette-primary-neutral-color, 0.6);
 			}
 		}
 	}
-	.link-primary,
-	.link-secondary,
-	.button-primary,
-	.form-submit .submit,
-	input[type="submit"],
-	.button-secondary:hover,
-	.button-secondary:focus {
+	.button-primary {
+		background: none;
 		border: 1px solid $palette-primary_2;
 		color: $palette-primary_2;
 	}
@@ -72,6 +66,12 @@ $rgba_neutral : rgba($palette-primary-neutral-color, 0.6);
 		border: 1px solid $palette-primary_2;
 		background: $palette-primary_2;
 		color: $text-contrast-palette-primary_2;
+	}	
+	.button-secondary:hover,
+	.button-secondary:focus {
+		background: none;
+		border: 1px solid $palette-primary_2;
+		color: $palette-primary_2;
 	}
 	hr,
 	.nav > li > a:focus i.fa,
@@ -84,23 +84,17 @@ $rgba_neutral : rgba($palette-primary-neutral-color, 0.6);
 	#colophon .nav > li > a:focus,
 	.dropdown-menu > li > a:hover,
 	.dropdown-menu > li > a:focus,
-	input[type="submit"]:hover,
-	input[type="submit"]:focus,
 	.open > .dropdown-toggle.btn-primary,
 	.nav > li > a:focus,
 	.nav > li > a:hover,
 	.pager li > a:hover,
-	.pager li > a:focus {
+	.pager li > a:focus,
+	#header-widget-area .button-primary,
+	.mark,
+	mark {
 		background: $palette-primary_2;
 		color: $text-contrast-palette-primary_2;
-	}
-	.form-submit .submit:hover,
-	.form-submit .submit:focus {
-		background: $palette-primary_2;
-		border-color: $palette-primary_2;
-		color: $text-contrast-palette-primary_2;
-	}
-	.panel-footer a,
+	}	
 	.current_page_item a,
 	.site-header .widget.well li > a:hover {
 		color: $text-contrast-palette-primary_2;
@@ -159,12 +153,6 @@ $rgba_neutral : rgba($palette-primary-neutral-color, 0.6);
 		background: none;
 		border: 1px solid $palette-primary_2;
 		color: $text-contrast-palette-primary_4;
-	}
-	#header-widget-area .button-primary,
-	.mark,
-	mark {
-		background: $palette-primary_2;
-		color: $text-contrast-palette-primary_2;
 	}
 	.panel-default > .panel-heading,
 	.navbar-default .navbar-toggle {
@@ -265,9 +253,6 @@ $rgba_neutral : rgba($palette-primary-neutral-color, 0.6);
 	.site-description,
 	#menu-social li a:hover,
 	#menu-social li a:hover i,
-	.site-footer .attribution,
-	.widget-area caption,
-	.widget-area .nav > li > a,
 	#colophon li.current_page_item a,
 	#secondary .table > tbody > tr td,
 	#reviews #comments ol.commentlist li .meta {
@@ -282,9 +267,6 @@ $rgba_neutral : rgba($palette-primary-neutral-color, 0.6);
 	}
 	.mod-beta-1 p:after {
 		border-color: $palette-primary-neutral-color transparent;
-	}
-	.widget-area {
-		border: 1px solid $palette-primary-neutral-color;
 	}
 	.pager li > a {
 		border: 1px solid $text-contrast-palette-primary-neutral-color;
@@ -312,7 +294,7 @@ $rgba_neutral : rgba($palette-primary-neutral-color, 0.6);
 	}
 
 	/*-----------------------------------------------
-	## 2 - Gamma Module
+	## Gamma Module
 	-----------------------------------------------*/
 	.mod-gamma-2 h6,
 	.mod-gamma-2 p {
@@ -326,25 +308,20 @@ $rgba_neutral : rgba($palette-primary-neutral-color, 0.6);
 	&.search,
 	&.single,
 	&.archive,
-	&.blog {
-		.site-content {
-			background: $rgba_neutral;
-			color: $text-contrast-palette-primary-neutral-color;
-		}
-	}
+	&.blog,
 	&.error404 {
 		.site-content {
 			background: $rgba_neutral;
 			color: $text-contrast-palette-primary-neutral-color;
 		}
-		.list-group-item {
-			border: 1px $palette-primary_2 solid;
-			background: $rgba_neutral;
-		}
+	}
+	&.error404 .list-group-item {
+		border: 1px $palette-primary_2 solid;
+		background: $rgba_neutral;
 	}
 
 	/*-----------------------------------------------
-	## 3 - WooCommerce
+	## WooCommerce
 	-----------------------------------------------*/
 	&.woocommerce .color1-color,
 	&.woocommerce-page .color1-color {
