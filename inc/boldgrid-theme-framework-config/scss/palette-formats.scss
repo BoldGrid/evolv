@@ -168,9 +168,7 @@ $rgba_neutral : rgba($palette-primary-neutral-color, 0.6);
 			color: $text-contrast-palette-primary_2;
 		}
 	}
-
-	/* md */
-	@media (min-width: 992px) {
+	@media only screen and (min-width: 992px) {
 		.mod-beta-1 p::before {
 			border-color: transparent $palette-primary_2;
 		}
@@ -270,9 +268,7 @@ $rgba_neutral : rgba($palette-primary-neutral-color, 0.6);
 	.pager li > a {
 		border: 1px solid $text-contrast-palette-primary-neutral-color;
 	}
-
-	/* md */
-	@media (min-width: 992px) {
+	@media only screen and (min-width: 992px) {
 		.mod-beta-1 p:after {
 			border-color: transparent $palette-primary-neutral-color;
 		}
@@ -342,7 +338,6 @@ $rgba_neutral : rgba($palette-primary-neutral-color, 0.6);
 	background: $palette-primary-neutral-color;
 	color: $text-contrast-palette-primary-neutral-color;
 }
-
 /** edit link only on home page **/
 body.palette-primary.page-template-page_home .entry-footer {
 	background: $palette-primary-neutral-color;

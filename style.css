@@ -119,7 +119,6 @@ h6.alt-font {
 #today a {
 	text-decoration: underline;
 }
-
 .entry-title {
 	text-align: left;
 }
@@ -128,7 +127,7 @@ h6.alt-font {
 	text-align: right;
 }
 
-/* xs */
+/* Extra small devices (phones, less than 768px) */
 .xs-center,
 .mod-img,
 .mod-img-circle,
@@ -142,8 +141,8 @@ h6.alt-font {
 	text-align: center;
 }
 
-/* md */
-@media (min-width: 992px) {
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
 	.xs-center,
 	.mod-img,
 	.mod-img-circle,
@@ -231,8 +230,8 @@ a,
 	margin-top: 15px;
 }
 
-/* sm */
-@media (min-width: 600px) {
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
 	.button-primary,
 	.button-secondary {
 		display: inline;
@@ -284,8 +283,8 @@ select,
 	width: 100%;
 }
 
-/* sm */
-@media (min-width: 768px) {
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
 	.site-header {
 		position: fixed;
 	}	
@@ -316,7 +315,6 @@ select,
 .navbar-nav > li > a {
 	padding: 12px 10px;
 }
-
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus,
@@ -326,13 +324,13 @@ select,
 	background: none;
 }
 
-/* xs */
+/* Extra small devices (phones, less than 768px) */
 #primary-navbar ul.navbar-nav {
 	width: 100%;
 }
 
-/* sm */
-@media (min-width: 768px) {
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
 	#primary-navbar {
 		float: right;
 	}
@@ -427,8 +425,8 @@ blockquote p,
 	z-index: 0;
 }
 
-/* md */
-@media (min-width: 992px) {
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
 	.mod-beta-1 p:after {
 		border-style: solid;
 		border-width: 15px 0 15px 15px;
@@ -475,8 +473,8 @@ blockquote p,
 	margin: 0;
 }
 
-/* md */
-@media (min-width: 992px) {
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
 	.mod-gamma-2 {
 		width: 100%;
 	}
@@ -549,15 +547,15 @@ body.disabled-footer {
 	padding: 1em;
 }
 
-/* sm */
-@media (min-width: 768px) {
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
 	.disabled-footer .content-area {
 		margin-bottom: 0;
 	}
 }
 
-/* md */
-@media (max-width: 992px) {
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
 	#colophon #menu-social {
 		display: table;
 		margin: 0 auto;
