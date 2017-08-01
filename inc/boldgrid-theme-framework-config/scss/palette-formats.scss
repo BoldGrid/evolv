@@ -339,9 +339,6 @@ $rgba_neutral : rgba($palette-primary-neutral-color, 0.6);
 	color: $text-contrast-palette-primary-neutral-color;
 }
 /** edit link only on home page **/
-body.palette-primary.page-template-page_home .entry-footer {
-	background: $palette-primary-neutral-color;
-}
 body.palette-primary.page-template-default .hentry {
 	background: $rgba_neutral;
 }
