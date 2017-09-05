@@ -161,7 +161,7 @@ h6.alt-font {
 	display: none;
 }
 .hentry {
-	margin: 0 auto;
+	margin: 0 auto 50px;
 }
 .hentry:first-child ~ .hentry {
 	margin-top: 75px;
