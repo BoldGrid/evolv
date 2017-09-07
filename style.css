@@ -160,12 +160,6 @@ h6.alt-font {
 .page-template-page_home .entry-title {
 	display: none;
 }
-.hentry {
-	margin: 0 auto 50px;
-}
-.hentry:first-child ~ .hentry {
-	margin-top: 75px;
-}
 .heading {
 	margin-bottom: 15px;
 }
@@ -495,6 +489,9 @@ blockquote p,
 /*------------------------------------------------------------------------
 # Posts
 ------------------------------------------------------------------------*/
+.post {
+	margin: 0 auto 50px;
+}
 .nav-links {
 	margin: 25px 0;
 }
