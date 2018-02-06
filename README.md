@@ -6,7 +6,7 @@
 - License: GNU General Public License v2 or later
 - License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-BoldGrid Theme best suited for Fitness, Fashion, Property Management, Consulting, Marketing, and Restaurant sites.
+BoldGrid Theme best suited for Fitness, Fashion, Consulting, Marketing, and Restaurant sites.
 
 ## Information & Changelog
 [BoldGrid.com - Evolv](https://www.boldgrid.com/themes/evolv/)
